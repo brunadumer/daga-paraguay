@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daga Bebidas - Licores exóticos como el famoso Licor del Beso con jambú y cachaças añejadas en maderas brasileñas. Industria brasileña de Curitiba-PR, buscando socios comerciales en Paraguay.">
-    <title>Daga Bebidas | Licores y cachaças de Brasil</title>
+    <meta name="description" content="Daga Bebidas: licores innovadores y cachazas brasileñas con personalidad. Auténtica. Audaz. Brasileña. Nuevas oportunidades comerciales para el mercado paraguayo.">
+    <title>Daga Bebidas | Auténtica. Audaz. Brasileña.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&family=Saira+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/marca/daga-icone-claro.svg" type="image/svg+xml">
+    <link rel="icon" href="images/marca/bebidas-daga-icone.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,14 +16,14 @@
     <!-- Aparece en la primera visita; la respuesta queda guardada en el navegador (ver script.js, sección 1) -->
     <div class="idade-aviso" id="idadeAviso" role="dialog" aria-modal="true" aria-labelledby="idadeTitulo" hidden>
         <div class="idade-caixa">
-            <img src="images/marca/bebidas-daga-vertical-escuro.svg" alt="Bebidas Daga" class="idade-logo">
-            <h2 id="idadeTitulo">¿Usted es mayor de edad?</h2>
-            <p>Este sitio contiene información sobre bebidas alcohólicas y está dirigido solo a personas con la edad legal para consumirlas en su país.</p>
+            <img src="images/marca/bebidas-daga-escuro.svg" alt="Bebidas Daga" class="idade-logo">
+            <h2 id="idadeTitulo">¿Sos mayor de edad?</h2>
+            <p>Este sitio contiene información sobre bebidas alcohólicas y está dirigido solo a personas con la edad legal para consumirlas en tu país.</p>
             <div class="idade-botoes">
                 <button class="btn btn-primary" id="idadeSim">Sí, soy mayor de edad</button>
                 <button class="btn btn-ghost" id="idadeNao">No</button>
             </div>
-            <p class="idade-recusa" id="idadeRecusa" hidden>Lo sentimos. Vuelva cuando tenga la edad legal.</p>
+            <p class="idade-recusa" id="idadeRecusa" hidden>Lo sentimos. Volvé cuando tengas la edad legal.</p>
         </div>
     </div>
 
@@ -31,23 +31,22 @@
     <header class="header" id="header">
         <nav class="nav">
             <a href="#inicio" class="logo">
-                <img src="images/marca/daga-horizontal-claro.svg" alt="Cachaça Daga">
+                <img src="images/marca/bebidas-daga-horizontal-claro.svg" alt="Bebidas Daga">
             </a>
 
             <ul class="nav-menu" id="navMenu">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#esencia">Nuestra esencia</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#jambeijo">Licor del Beso</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#negocios">Su negocio</a></li>
+                <li><a href="#por-que">¿Por qué Daga?</a></li>
+                <li><a href="#negocios">Negocios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
 
             <div class="nav-acoes">
                 <a href="https://www.instagram.com/dagabebidas/" class="nav-icone" target="_blank" rel="noopener" aria-label="Instagram">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg>
                 </a>
-                <!-- EDITÁVEL: Número do WhatsApp comercial -->
-                <a href="https://wa.me/5541992003693" class="btn btn-primary btn-sm nav-loja" target="_blank" rel="noopener" data-msg="comercial">
+                <a href="#contacto" class="btn btn-primary btn-sm nav-loja">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.6-1.2A9 9 0 1 0 12 3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
                     <span>Contacto comercial</span>
                 </a>
@@ -64,44 +63,161 @@
     <section class="hero" id="inicio">
         <div class="container hero-grid">
             <div class="hero-content">
-                <span class="eyebrow">Licores y cachaças · Hecho en Brasil</span>
-                <h1>La cachaça brasileña en un <em>nuevo nivel.</em></h1>
-                <p class="hero-subtitle">Licores exóticos, como el famoso Licor del Beso con jambú, y cachaças añejadas en maderas brasileñas. Tradición e innovación de Curitiba, Brasil, ahora para el mercado paraguayo.</p>
+                <span class="eyebrow">Daga Bebidas</span>
+                <h1>Auténtica. Audaz. <em>Brasileña.</em></h1>
+                <p class="hero-lema">Nuevas oportunidades para tu negocio.</p>
+                <p class="hero-subtitle">Creamos licores innovadores y seleccionamos cachazas brasileñas con personalidad, combinando tradición, calidad y experiencias sensoriales sorprendentes. Conocé nuestro portafolio y descubrí nuevas oportunidades comerciales para el mercado paraguayo.</p>
                 <div class="hero-buttons">
-                    <a href="#productos" class="btn btn-primary">Ver productos</a>
-                    <a href="#negocios" class="btn btn-ghost">Quiero ser distribuidor</a>
+                    <a href="#esencia" class="btn btn-primary">Conocé nuestra marca</a>
+                    <a href="#productos" class="btn btn-ghost">Explorá nuestros productos</a>
                 </div>
             </div>
-            <div class="hero-garrafas">
+            <div class="hero-foto">
                 <div class="hero-circulo"></div>
-                <img src="images/fotos/garrafa-carvalho.webp" alt="Cachaça Daga Roble" class="garrafa garrafa-esq">
-                <img src="images/fotos/garrafa-reserva-copa.webp" alt="Cachaça Daga añejada servida en copa" class="garrafa garrafa-centro">
-                <img src="images/fotos/garrafa-laurel-canela.webp" alt="Cachaça Daga Laurel Canela" class="garrafa garrafa-dir">
+                <img src="images/fotos/hero-coquetel.webp" alt="Cachaza Daga Clásica con un cóctel cítrico frente al logo de Bebidas Daga">
             </div>
         </div>
         <svg class="hero-onda" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80C240 20 480 120 760 70s520-60 680 0v50H0Z"/></svg>
     </section>
 
-    <!-- ========== DIFERENCIALES RÁPIDOS ========== -->
-    <div class="vantagens">
-        <div class="container vantagens-lista">
-            <div><span>📍</span>Industria brasileña · Curitiba-PR</div>
-            <div><span>🏅</span>Rótulos premiados</div>
-            <div><span>🥃</span>Más de 20 productos</div>
-            <div><span>🎁</span>Kits listos para regalo</div>
+    <!-- ========== NUESTRA ESENCIA ========== -->
+    <section class="esencia" id="esencia">
+        <div class="container esencia-grid">
+            <div class="esencia-info">
+                <span class="eyebrow">Nuestra esencia</span>
+                <h2>Nacimos en Brasil. <em>Creamos para sorprender.</em></h2>
+                <p>Daga Bebidas es una marca brasileña que cree que una buena bebida es mucho más que su sabor: es cultura, identidad, conexión y experiencia.</p>
+                <p>Inspirados en la riqueza de los ingredientes brasileños y en nuestra tradición de producir bebidas con personalidad, desarrollamos productos que unen autenticidad, calidad e innovación.</p>
+                <p>Nuestro portafolio combina la esencia de la cachaza brasileña con licores de sabores originales, creados para quienes buscan descubrir algo diferente.</p>
+                <p class="esencia-frase">Tradición en nuestras raíces. Innovación en cada botella.</p>
+            </div>
+            <div class="esencia-fotos">
+                <img src="images/fotos/esencia-linea.webp" alt="Línea completa de licores Daga en la barra" loading="lazy" class="esencia-foto-1">
+                <img src="images/fotos/esencia-bar.webp" alt="Licores y miniaturas Daga frente a barriles de madera" loading="lazy" class="esencia-foto-2">
+            </div>
         </div>
-    </div>
+    </section>
 
-    <!-- ========== PRODUCTOS ========== -->
-    <!-- Las tarjetas las arma script.js a partir de la lista de productos (sección 2 del script) -->
-    <section class="vitrine" id="productos">
+    <!-- ========== NUESTRA MISIÓN ========== -->
+    <section class="destaque mision" id="mision">
+        <div class="container mision-conteudo">
+            <span class="eyebrow">Nuestra misión</span>
+            <h2>Democratizar el acceso a bebidas <em>auténticas y de calidad.</em></h2>
+            <p>Nuestra misión es acercar a más personas al universo de la cachaza y los licores brasileños, ofreciendo bebidas de calidad, con identidad propia y experiencias sensoriales únicas.</p>
+            <p>Buscamos romper paradigmas, valorizar la cultura brasileña y demostrar que la cachaza y los licores pueden ocupar un lugar destacado en diferentes momentos de consumo: desde una celebración entre amigos hasta la coctelería contemporánea.</p>
+            <p>Creemos en la innovación sin perder nuestras raíces, en las relaciones comerciales duraderas y en el potencial de llevar el sabor de Brasil más allá de nuestras fronteras.</p>
+        </div>
+    </section>
+
+    <!-- ========== NUESTROS PRODUCTOS ========== -->
+    <section class="productos" id="productos">
+        <div class="container">
+            <div class="vitrine-topo centro">
+                <span class="eyebrow">Nuestros productos</span>
+                <h2>Sabores auténticos. <em>Experiencias extraordinarias.</em></h2>
+                <p>Nuestro portafolio reúne bebidas versátiles, con diferentes perfiles sensoriales, presentaciones y propuestas de consumo.</p>
+            </div>
+
+            <!-- Licores -->
+            <div class="linea" id="licores">
+                <div class="linea-texto">
+                    <h3 class="linea-titulo">Licores Daga</h3>
+                    <p class="linea-lema">Creatividad brasileña en cada sorbo.</p>
+                    <p>Desarrollamos licores que combinan ingredientes tradicionales y propuestas innovadoras, con sabores que despiertan la curiosidad y sorprenden al paladar.</p>
+                    <p>Desde opciones dulces y cremosas hasta combinaciones intensas y exóticas, cada producto expresa nuestra pasión por crear experiencias diferentes.</p>
+                </div>
+                <h4 class="destacados-titulo">Productos destacados</h4>
+                <div class="destacados-grid">
+                    <article class="destacado destacado-estrella">
+                        <img src="images/fotos/jambeijo.webp" alt="Botella de Jambeijo, el Licor del Beso" loading="lazy">
+                        <div class="destacado-texto">
+                            <h3>Jambeijo <span>El Licor del Beso</span></h3>
+                            <p>Nuestro licor de jambu, canela y pimienta de Jamaica. Una combinación exótica que provoca una sorprendente sensación de hormigueo en la boca. Una experiencia sensorial que invita a descubrir el sabor de Brasil.</p>
+                        </div>
+                    </article>
+                    <article class="destacado">
+                        <img src="images/fotos/galeria-fire.webp" alt="Licor Daga Fire en botella grande y miniatura" loading="lazy">
+                        <div class="destacado-texto">
+                            <h3>Fire <span>Licor de Canela</span></h3>
+                            <p>Intenso, aromático y lleno de personalidad. Una propuesta para quienes disfrutan de sabores marcantes y experiencias vibrantes.</p>
+                        </div>
+                    </article>
+                    <article class="destacado">
+                        <img src="images/fotos/galeria-capivara.webp" alt="Licor Daga Caipivara en tres tamaños" loading="lazy">
+                        <div class="destacado-texto">
+                            <h3>Caipivara <span>Licor de Hierbas</span></h3>
+                            <p>Una combinación refrescante de yerba mate, cedrón y menta, inspirada en ingredientes y sabores que forman parte de nuestra identidad regional.</p>
+                        </div>
+                    </article>
+                    <article class="destacado">
+                        <img src="images/fotos/galeria-bananina.webp" alt="Licor Daga Bananina" loading="lazy">
+                        <div class="destacado-texto">
+                            <h3>Bananina <span>Licor de Banana</span></h3>
+                            <p>Un homenaje a los sabores tropicales y a la tradición gastronómica de Paraná, con una personalidad dulce y auténtica.</p>
+                        </div>
+                    </article>
+                    <article class="destacado">
+                        <img src="images/fotos/galeria-licores.webp" alt="Licores Daga de diferentes sabores" loading="lazy">
+                        <div class="destacado-texto">
+                            <h3>Y muchos sabores más...</h3>
+                            <p>Café, frutas, miel, chocolate y combinaciones que reflejan la diversidad y creatividad de nuestro portafolio.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="linea-acao">
+                    <a href="#catalogo" class="btn btn-primary" data-ir-filtro="licor">Descubrí nuestros licores</a>
+                </div>
+            </div>
+
+            <!-- Cachazas -->
+            <div class="linea linea-dupla" id="cachazas">
+                <div class="linea-fotos">
+                    <img src="images/fotos/cachazas-paranaenses.webp" alt="Cachazas Daga del proyecto Cachaças Paranaenses en la barra" loading="lazy" class="linea-foto-grande">
+                    <img src="images/fotos/tres-maderas.webp" alt="Cachazas Daga añejadas en amburana, jequitibá y laurel canela" loading="lazy">
+                    <img src="images/fotos/cachaza-copa.webp" alt="Joven con una botella y una copa de cachaza Daga" loading="lazy">
+                </div>
+                <div class="linea-texto">
+                    <h3 class="linea-titulo">Cachazas Daga</h3>
+                    <p class="linea-lema">La tradición brasileña con una nueva perspectiva.</p>
+                    <p>La cachaza es una de las expresiones más auténticas de la cultura brasileña.</p>
+                    <p>En Daga, valorizamos esta tradición a través de una selección de cachazas con diferentes perfiles, incluyendo versiones tradicionales y opciones añejadas en maderas especiales brasileñas.</p>
+                    <p>Desde la intensidad de la cachaza clásica hasta la complejidad de las versiones premium, nuestro portafolio ofrece alternativas para degustación, coctelería y regalos.</p>
+                    <p class="linea-lista-titulo">Nuestra selección incluye:</p>
+                    <ul class="linea-lista">
+                        <li>Cachaza Clásica</li>
+                        <li>Cachaza Amburana</li>
+                        <li>Cachaza Carvalho (Roble)</li>
+                        <li>Cachaza Jequitibá</li>
+                        <li>Cachazas Premium y Ediciones Especiales, como blends y el proyecto Cachaças Paranaenses</li>
+                    </ul>
+                    <a href="#catalogo" class="btn btn-primary" data-ir-filtro="cachaca">Descubrí nuestras cachazas</a>
+                </div>
+            </div>
+
+            <!-- Kits -->
+            <div class="linea linea-dupla linea-kits" id="kits">
+                <div class="linea-texto">
+                    <h3 class="linea-titulo">Kits y experiencias</h3>
+                    <p class="linea-lema">Mucho más que una bebida: una forma de descubrir Brasil.</p>
+                    <p>También desarrollamos kits de degustación, miniaturas y presentaciones especiales que permiten explorar diferentes sabores y descubrir la diversidad de nuestras bebidas.</p>
+                    <p>Opciones pensadas para regalos, experiencias gastronómicas, turismo y nuevos momentos de consumo.</p>
+                </div>
+                <div class="linea-fotos linea-fotos-uma">
+                    <img src="images/fotos/kits-experiencias.webp" alt="Kit de degustación Daga con cinco miniaturas de licor en caja de MDF" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTAFOLIO (tarjetas armadas por script.js) ========== -->
+    <section class="vitrine vitrine-alt" id="catalogo">
         <div class="container">
             <div class="vitrine-topo">
-                <h2>Nuestros productos</h2>
+                <h2>Portafolio</h2>
                 <div class="filtros" role="tablist" aria-label="Filtrar productos">
                     <button class="filtro ativo" data-filtro="todas" role="tab" aria-selected="true">Todos</button>
-                    <button class="filtro" data-filtro="cachaca" role="tab" aria-selected="false">Cachaças</button>
                     <button class="filtro" data-filtro="licor" role="tab" aria-selected="false">Licores</button>
+                    <button class="filtro" data-filtro="cachaca" role="tab" aria-selected="false">Cachazas</button>
                     <button class="filtro" data-filtro="kit" role="tab" aria-selected="false">Kits</button>
                 </div>
             </div>
@@ -113,207 +229,142 @@
         </div>
     </section>
 
-    <!-- ========== DESTACADO: JAMBEIJO ========== -->
-    <section class="destaque" id="jambeijo">
-        <div class="container destaque-grid">
-            <div class="destaque-info">
-                <span class="eyebrow">Nuestro producto estrella</span>
-                <h2>Jambeijo, el famoso <em>Licor del Beso</em></h2>
-                <p>Atrevido, sabroso e inolvidable. Una combinación sorprendente entre lo picante de las especias y la vibración del jambú, una flor de la Amazonía brasileña. Ideal para romper el hielo y convertirse en la estrella de cualquier barra.</p>
-                <ul class="destaque-lista">
-                    <li><strong>Ingredientes:</strong> cachaça, flor de jambú, clavo de olor, canela y pimienta de Jamaica</li>
-                    <li><strong>Sensación:</strong> un hormigueo y una vibración en la lengua y los labios</li>
-                    <li><strong>El ritual:</strong> se sirve bien frío, en shot, dejando que el licor recorra la boca</li>
-                </ul>
-                <div class="destaque-botoes">
-                    <a href="https://wa.me/5541992003693" class="btn btn-primary" target="_blank" rel="noopener" data-msg="jambeijo">Solicitar muestras</a>
-                    <span class="destaque-preco">Licor fino · <strong>500 ml · 22% vol</strong></span>
-                </div>
-            </div>
-            <div class="destaque-imagem">
-                <img src="images/fotos/jambeijo.webp" alt="Mano sosteniendo una botella de Jambeijo, el Licor del Beso" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== ¿QUÉ ES LA CACHAÇA? ========== -->
-    <section class="cachaca">
-        <div class="container cachaca-grid">
-            <div class="cachaca-imagem">
-                <img src="images/fotos/tres-maderas.webp" alt="Cachaças Daga añejadas en amburana, jequitibá y laurel canela" loading="lazy">
-            </div>
-            <div class="cachaca-info">
-                <span class="eyebrow">El destilado de Brasil</span>
-                <h2>¿Qué es la <em>cachaça</em>?</h2>
-                <p>La cachaça es la bebida nacional de Brasil y la base de la caipiriña. Se destila del jugo fresco de la caña de azúcar, y no de la melaza como la mayoría de los rones. Por eso tiene un aroma más vegetal y un sabor propio. Cuando se añeja en maderas como el jequitibá, la amburana o el roble, gana notas de vainilla, especias y frutos secos.</p>
-                <div class="cachaca-fatos">
-                    <div class="cachaca-fato">
-                        <strong>Caña fresca</strong>
-                        <span>Destilada del jugo de la caña, no de la melaza.</span>
-                    </div>
-                    <div class="cachaca-fato">
-                        <strong>Maderas nativas</strong>
-                        <span>Jequitibá, amburana, laurel canela y roble.</span>
-                    </div>
-                    <div class="cachaca-fato">
-                        <strong>Caipiriña</strong>
-                        <span>El cóctel brasileño más conocido del mundo.</span>
-                    </div>
-                    <div class="cachaca-fato">
-                        <strong>Para degustar</strong>
-                        <span>Las añejadas se toman puras, como un buen whisky.</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== CACHAÇAS PREMIUM ========== -->
-    <section class="vitrine vitrine-alt">
+    <!-- ========== ¿POR QUÉ DAGA? ========== -->
+    <section class="razones" id="por-que">
         <div class="container">
             <div class="vitrine-topo centro">
-                <h2>Cachaças nobles y premium</h2>
-                <p>Añejadas en maderas brasileñas y barriles seleccionados.</p>
+                <span class="eyebrow">¿Por qué Daga?</span>
+                <h2>Una marca brasileña con <em>identidad y visión de futuro.</em></h2>
             </div>
-            <div class="carrossel" data-carrossel>
-                <button class="carrossel-seta anterior" aria-label="Anteriores">‹</button>
-                <div class="carrossel-trilho" data-lista="premium"></div>
-                <button class="carrossel-seta proxima" aria-label="Siguientes">›</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== NOSOTROS ========== -->
-    <section class="sobre" id="nosotros">
-        <div class="container">
-            <div class="vitrine-topo centro">
-                <h2>Conozca Daga</h2>
-                <p>Una marca joven y divertida, apasionada por transformar momentos comunes en celebraciones únicas.</p>
-            </div>
-            <div class="sobre-grid">
-                <div class="sobre-coluna">
-                    <div class="diferencial">
-                        <h3>Nacida en Curitiba</h3>
-                        <p>Creada por Giovani Daga, empresario y cachacista, para llevar la cachaça y los licores brasileños a un nuevo nivel.</p>
-                    </div>
-                    <div class="diferencial">
-                        <h3>El Licor del Beso</h3>
-                        <p>El Jambeijo, hecho con jambú y especias, es la experiencia sensorial que se convirtió en el sello de la casa.</p>
-                    </div>
-                    <div class="diferencial">
-                        <h3>Maderas brasileñas</h3>
-                        <p>Cachaças añejadas en jequitibá, amburana, laurel canela y roble, cada una con personalidad propia.</p>
-                    </div>
+            <div class="razones-grid">
+                <div class="razon">
+                    <span class="razon-numero">01</span>
+                    <h3>Autenticidad brasileña</h3>
+                    <p>Productos que valorizan nuestra cultura, nuestros ingredientes y nuestras tradiciones.</p>
                 </div>
-                <div class="sobre-garrafa">
-                    <img src="https://assets.sistemawbuy.com.br/arquivos/829e6bff907fc6de7a54a7629c9eeafe/produtos/690f56d654517/louro-canela-6917721d75844_mini.jpg" alt="Cachaça Daga Laurel Canela" loading="lazy">
+                <div class="razon">
+                    <span class="razon-numero">02</span>
+                    <h3>Innovación y diferenciación</h3>
+                    <p>Sabores originales y propuestas sensoriales que se destacan en el mercado.</p>
                 </div>
-                <div class="sobre-coluna">
-                    <div class="diferencial">
-                        <h3>Rótulos premiados</h3>
-                        <p>Se destaca la Cachaça Daga Jequitibá, premiada y uno de los orgullos de nuestra línea de añejadas.</p>
-                    </div>
-                    <div class="diferencial">
-                        <h3>Cachaça para todos</h3>
-                        <p>Nuestra misión es democratizar la cachaça: calidad accesible y siempre con incentivo al consumo responsable.</p>
-                    </div>
-                    <div class="diferencial">
-                        <h3>Línea completa</h3>
-                        <p>Cachaças, licores frutales, miniaturas y kits de regalo para diferentes ocasiones y canales de venta.</p>
-                    </div>
+                <div class="razon">
+                    <span class="razon-numero">03</span>
+                    <h3>Calidad y compromiso</h3>
+                    <p>Trabajamos con procesos de producción realizados por establecimientos habilitados y bajo las exigencias regulatorias aplicables en Brasil.</p>
+                </div>
+                <div class="razon">
+                    <span class="razon-numero">04</span>
+                    <h3>Portafolio diversificado</h3>
+                    <p>Licores, cachazas, miniaturas y kits que se adaptan a diferentes canales y perfiles de consumidores.</p>
+                </div>
+                <div class="razon">
+                    <span class="razon-numero">05</span>
+                    <h3>Visión internacional</h3>
+                    <p>Buscamos construir relaciones comerciales sólidas y ampliar la presencia de nuestras bebidas en nuevos mercados.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== MÁS VENDIDOS EN BRASIL ========== -->
-    <section class="vitrine">
-        <div class="container">
-            <div class="vitrine-topo centro">
-                <h2>Los más vendidos en Brasil</h2>
-            </div>
-            <div class="carrossel" data-carrossel>
-                <button class="carrossel-seta anterior" aria-label="Anteriores">‹</button>
-                <div class="carrossel-trilho" data-lista="maisvendidos"></div>
-                <button class="carrossel-seta proxima" aria-label="Siguientes">›</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== GALERÍA ========== -->
-    <!-- EDITÁVEL: fotos de la marca (carpeta images/fotos) -->
-    <section class="galeria" id="galeria">
-        <div class="container">
-            <div class="vitrine-topo centro">
-                <span class="eyebrow">Daga en la barra</span>
-                <h2>Botellas que <em>llaman la atención</em></h2>
-                <p>Etiquetas con personalidad, pensadas para destacarse en la barra, en la góndola y en las redes.</p>
-            </div>
-            <div class="galeria-grid">
-                <img src="images/fotos/galeria-licores.webp" alt="Licores Daga de capivara, leche condensada, mora y banana" loading="lazy" class="galeria-ancha">
-                <img src="images/fotos/galeria-shot.webp" alt="Shot de cachaça servido en la barra" loading="lazy" class="galeria-alta">
-                <img src="images/fotos/galeria-fire.webp" alt="Licor Daga Fire en botella grande y miniatura" loading="lazy">
-                <img src="images/fotos/galeria-barra.webp" alt="Bartender sirviendo licores Daga" loading="lazy">
-                <img src="images/fotos/galeria-beso.webp" alt="Modelo con la botella de Jambeijo, el Licor del Beso" loading="lazy" class="galeria-alta">
-                <img src="images/fotos/galeria-cafe.webp" alt="Licores Daga de café y leche condensada con cóctel" loading="lazy">
-                <img src="images/fotos/galeria-brindis.webp" alt="Giovani Daga brindando con cachaça Daga" loading="lazy" class="galeria-ancha">
-                <img src="images/fotos/galeria-capivara.webp" alt="Licor Daga Capivara en tres tamaños" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- ========== SU NEGOCIO ========== -->
+    <!-- ========== OPORTUNIDADES DE NEGOCIOS ========== -->
     <section class="negocios" id="negocios">
         <div class="container">
             <div class="vitrine-topo centro">
-                <h2>Daga para <em>su negocio</em></h2>
-                <p>Buscamos socios en Paraguay para llevar nuestros productos a más mesas y barras.</p>
+                <span class="eyebrow">Oportunidades de negocios</span>
+                <h2>Brasil y Paraguay: <em>nuevos mercados, grandes oportunidades.</em></h2>
+                <p>Creemos en el potencial de conectar la industria brasileña con empresarios y consumidores paraguayos.</p>
+                <p>Daga Bebidas busca establecer alianzas estratégicas para desarrollar oportunidades comerciales y llevar sus productos al mercado internacional.</p>
             </div>
+            <p class="negocios-abertos">Estamos abiertos a conversar sobre:</p>
             <div class="negocios-grid">
                 <div class="negocio">
                     <div class="negocio-foto"><img src="images/fotos/negocio-distribuidores.webp" alt="Línea de licores Daga sobre la barra" loading="lazy"></div>
                     <span class="negocio-numero">01</span>
-                    <h3>Distribuidores e importadores</h3>
-                    <p>Una línea completa de cachaças y licores con identidad propia y fácil de presentar.</p>
+                    <h3>Importación y distribución</h3>
+                    <p>Alianzas con importadores y distribuidores interesados en incorporar bebidas brasileñas diferenciadas a sus portafolios.</p>
                 </div>
                 <div class="negocio">
                     <div class="negocio-foto"><img src="images/fotos/negocio-bares.webp" alt="Tabla de degustación con cuatro licores Daga" loading="lazy"></div>
                     <span class="negocio-numero">02</span>
-                    <h3>Bares y restaurantes</h3>
-                    <p>El Jambeijo y la Cachaça Clásica son ideales para shots, caipiriñas y coctelería de autor.</p>
+                    <h3>Comercio minorista y gastronomía</h3>
+                    <p>Oportunidades para supermercados, tiendas especializadas, bares, restaurantes y otros canales de comercialización.</p>
                 </div>
                 <div class="negocio">
-                    <div class="negocio-foto"><img src="images/fotos/negocio-tiendas.webp" alt="Línea de cachaças Daga en la barra" loading="lazy"></div>
+                    <div class="negocio-foto negocio-foto-kit"><img src="images/fotos/kit-regalo.webp" alt="Caja Daga con cinco botellas" loading="lazy"></div>
                     <span class="negocio-numero">03</span>
-                    <h3>Tiendas y vinotecas</h3>
-                    <p>Botellas de 60 ml a 750 ml, con etiquetas que se destacan en la góndola.</p>
+                    <h3>Private Label — Marcas propias</h3>
+                    <p>Desarrollo de proyectos personalizados para empresas que buscan crear bebidas con identidad comercial propia, mediante acuerdos específicos de producción y suministro.</p>
                 </div>
                 <div class="negocio">
-                    <div class="negocio-foto negocio-foto-kit"><img src="images/fotos/kit-regalo.webp" alt="Caja de regalo Daga con cinco botellas" loading="lazy"></div>
+                    <div class="negocio-foto"><img src="images/fotos/galeria-brindis.webp" alt="Brindis con cachaza Daga" loading="lazy"></div>
                     <span class="negocio-numero">04</span>
-                    <h3>Regalos corporativos</h3>
-                    <p>Kits en cajas de MDF y maletas de degustación para eventos y fechas especiales.</p>
+                    <h3>Alianzas comerciales</h3>
+                    <p>Colaboraciones para desarrollar nuevos mercados, explorar oportunidades y construir relaciones de largo plazo.</p>
                 </div>
             </div>
-            <div class="negocios-acoes">
-                <a href="https://wa.me/5541992003693" class="btn btn-primary" target="_blank" rel="noopener" data-msg="distribuidor">Quiero ser distribuidor</a>
-                <a href="https://wa.me/5541992003693" class="btn btn-ghost" target="_blank" rel="noopener" data-msg="catalogo">Pedir catálogo y precios</a>
+            <div class="negocios-cierre">
+                <h3>¿Hacemos negocios juntos?</h3>
+                <p>Conocé nuestro portafolio y conversemos sobre cómo podemos crear nuevas oportunidades para tu empresa.</p>
+                <div class="negocios-acoes">
+                    <a href="https://wa.me/5541992003693" class="btn btn-primary" target="_blank" rel="noopener" data-msg="socio">Quiero ser socio comercial</a>
+                    <a href="#contacto" class="btn btn-ghost">Solicitar contacto comercial</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== CONTACTO ========== -->
-    <section class="novidades" id="contacto">
-        <div class="container novidades-grid">
-            <div class="novidades-imagem">
-                <div class="novidades-arco"></div>
-                <img src="images/fotos/kit-mdf.webp" alt="Kit de degustación Daga con 5 miniaturas en caja de MDF" loading="lazy" class="novidades-kit">
+    <!-- ========== CONECTEMOS ========== -->
+    <section class="conectemos" id="contacto">
+        <div class="container conectemos-grid">
+            <div class="conectemos-foto">
+                <img src="images/fotos/conectemos.webp" alt="Cachaza Daga Clásica con un cóctel en la barra" loading="lazy">
             </div>
-            <div class="novidades-info">
-                <h2>Hablemos de negocios</h2>
-                <p>Escríbanos por WhatsApp para recibir el catálogo completo, condiciones comerciales y muestras.</p>
-                <a href="https://wa.me/5541992003693" class="btn btn-primary" target="_blank" rel="noopener" data-msg="catalogo">Hablar por WhatsApp</a>
-                <p class="novidades-nota">Atención de lunes a viernes, de 8 a 17 h (hora de Brasil). Respondemos en español.</p>
+            <div class="conectemos-info">
+                <span class="eyebrow">Conectemos</span>
+                <h2>El próximo gran brindis puede comenzar con <em>una buena alianza.</em></h2>
+                <p>Desde Brasil, estamos preparados para compartir nuestra pasión por las bebidas auténticas y explorar nuevas oportunidades en Paraguay.</p>
+                <p>Si sos importador, distribuidor, empresario o representás una marca interesada en desarrollar nuevos productos, queremos conocerte.</p>
+                <p>Completá el formulario y nuestro equipo comercial se pondrá en contacto.</p>
+
+                <!-- Al enviar, el formulario abre WhatsApp con los datos completados (ver script.js, sección 9) -->
+                <form class="formulario" id="formContacto" novalidate>
+                    <div class="campo">
+                        <label for="fNombre">Nombre y apellido</label>
+                        <input type="text" id="fNombre" name="nombre" autocomplete="name" required>
+                    </div>
+                    <div class="campo">
+                        <label for="fEmpresa">Empresa</label>
+                        <input type="text" id="fEmpresa" name="empresa" autocomplete="organization">
+                    </div>
+                    <div class="campo">
+                        <label for="fCiudad">País / Ciudad</label>
+                        <input type="text" id="fCiudad" name="ciudad">
+                    </div>
+                    <div class="campo">
+                        <label for="fEmail">Correo electrónico</label>
+                        <input type="email" id="fEmail" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="fWhatsapp">WhatsApp</label>
+                        <input type="tel" id="fWhatsapp" name="whatsapp" autocomplete="tel">
+                    </div>
+                    <div class="campo">
+                        <label for="fInteres">Área de interés</label>
+                        <select id="fInteres" name="interes">
+                            <option>Importación y distribución</option>
+                            <option>Comercio minorista</option>
+                            <option>Gastronomía</option>
+                            <option>Private Label</option>
+                            <option>Otras alianzas</option>
+                        </select>
+                    </div>
+                    <div class="campo campo-largo">
+                        <label for="fMensaje">Mensaje</label>
+                        <textarea id="fMensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+                    <p class="form-erro" id="formErro" hidden>Completá tu nombre y un correo electrónico válido.</p>
+                    <button type="submit" class="btn btn-primary campo-largo">Enviar consulta</button>
+                </form>
             </div>
         </div>
     </section>
@@ -322,42 +373,38 @@
     <footer class="footer">
         <div class="container footer-grid">
             <div class="footer-marca">
-                <img src="images/marca/bebidas-daga-vertical-escuro.svg" alt="Bebidas Daga" class="footer-logo">
-                <p>Licores exóticos y cachaças artesanales nacidos en Curitiba, Brasil, uniendo tradición e innovación.</p>
-                <div class="footer-social">
-                    <a href="https://www.instagram.com/dagabebidas/" target="_blank" rel="noopener">Instagram</a>
-                    <a href="https://www.youtube.com/@dagabebidas" target="_blank" rel="noopener">YouTube</a>
-                    <a href="https://www.facebook.com/dagabebidas" target="_blank" rel="noopener">Facebook</a>
-                </div>
+                <img src="images/marca/bebidas-daga-escuro.svg" alt="Bebidas Daga" class="footer-logo">
+                <p class="footer-lema">Auténtica. Audaz. Brasileña.</p>
+                <p>Desde Paraná, Brasil, llevando sabores, experiencias y nuevas posibilidades al mundo.</p>
+                <p class="footer-frase">Descubrí Brasil en cada sorbo.</p>
             </div>
             <div>
                 <h4>Menú</h4>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#esencia">Nuestra esencia</a></li>
                     <li><a href="#productos">Productos</a></li>
-                    <li><a href="#jambeijo">Licor del Beso</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#por-que">¿Por qué Daga?</a></li>
+                    <li><a href="#negocios">Negocios</a></li>
                 </ul>
             </div>
             <div>
-                <h4>Comercial</h4>
+                <h4>Daga Bebidas</h4>
                 <ul>
-                    <li><a href="#negocios">Su negocio</a></li>
-                    <li><a href="https://wa.me/5541992003693" target="_blank" rel="noopener" data-msg="catalogo">Pedir catálogo</a></li>
-                    <li><a href="https://www.dagabebidas.com.br/" target="_blank" rel="noopener">Tienda online (Brasil)</a></li>
+                    <li><a href="https://www.instagram.com/dagabebidas/" target="_blank" rel="noopener">Instagram</a></li>
+                    <li><a href="https://www.dagabebidas.com.br/" target="_blank" rel="noopener">Sitio web</a></li>
+                    <li><a href="#contacto">Contacto comercial</a></li>
                 </ul>
             </div>
             <div>
                 <h4>Contacto</h4>
                 <ul>
-                    <li>Lunes a viernes, 8 a 17 h (Brasil)</li>
                     <li><a href="https://wa.me/5541992003693" target="_blank" rel="noopener">WhatsApp +55 41 99200-3693</a></li>
-                    <li>Curitiba, Paraná, Brasil</li>
+                    <li>Paraná, Brasil</li>
                 </ul>
             </div>
         </div>
         <div class="container footer-bottom">
-            <p>Prohibida la venta de bebidas alcohólicas a menores de edad. Beba con moderación.</p>
+            <p>Bebidas alcohólicas destinadas exclusivamente a mayores de edad. Consumí con moderación.</p>
             <p>&copy; 2026 Daga Bebidas®. Todos los derechos reservados.</p>
         </div>
     </footer>
