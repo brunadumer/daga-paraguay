@@ -23,6 +23,10 @@
         if (!pagina || pagina.dataset.pronto) return;
         pagina.dataset.pronto = 'sim';
 
+        // 0. A página vem no campo de scripts: coloca dentro do conteúdo da página
+        const destino = document.querySelector('#informacoes .texto') || document.querySelector('#informacoes .central');
+        if (destino && !destino.contains(pagina)) destino.appendChild(pagina);
+
         // 1. Largura total da tela (a loja coloca o conteúdo numa coluna)
         function esticar() {
             pagina.style.marginLeft = '0px';

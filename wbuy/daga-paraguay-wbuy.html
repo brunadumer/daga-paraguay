@@ -9,6 +9,7 @@
 #daga-py img { display: block; max-width: 100%; border: 0; }
 #daga-py section { margin: 0; float: none; width: auto; }
 #daga-py button, #daga-py input, #daga-py select, #daga-py textarea { font-family: inherit; }
+#informacoes > .central > .titulo { display: none; }
 #daga-py { --cobre: #a66421; --ouro: #9e814a; --prata: #f5f5f4; --preto: #1d1d1b; --primary: #a66421; --primary-dark: #a66421; --primary-light: #d6c39b; --cafe: #1d1d1b; --cafe-claro: #2a2a27; --bg: #f5f5f4; --bg-card: #ebe9e4; --white: #ffffff; --text: #1d1d1b; --text-light: #5f5d58; --price: #3f7a3a; --font: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; --font-title: 'Antonio', 'Arial Narrow', sans-serif; --font-label: 'Saira Condensed', 'Arial Narrow', sans-serif; --shadow: 0 6px 24px rgba(29, 29, 27, 0.08); --shadow-hover: 0 14px 36px rgba(29, 29, 27, 0.18); --radius: 18px; --radius-sm: 10px; --transition: all 0.3s ease; }
 #daga-py * { margin: 0; padding: 0; box-sizing: border-box; }
 #daga-py { scroll-behavior: smooth; }
@@ -613,6 +614,10 @@
         const pagina = document.getElementById('daga-py');
         if (!pagina || pagina.dataset.pronto) return;
         pagina.dataset.pronto = 'sim';
+
+        // 0. A p\u00e1gina vem no campo de scripts: coloca dentro do conte\u00fado da p\u00e1gina
+        const destino = document.querySelector('#informacoes .texto') || document.querySelector('#informacoes .central');
+        if (destino && !destino.contains(pagina)) destino.appendChild(pagina);
 
         // 1. Largura total da tela (a loja coloca o conte\u00fado numa coluna)
         function esticar() {
