@@ -1,0 +1,1822 @@
+/* ========== VARIÁVEIS CSS ========== */
+/* EDITÁVEL: Cores principais do tema (caramelo da marca, café e creme) */
+:root {
+    /* Paleta oficial do Guia de Identidade Visual Cachaça Daga */
+    --cobre: #a66421;
+    --ouro: #9e814a;
+    --prata: #f5f5f4;
+    --preto: #1d1d1b;
+    --primary: #a66421;
+    --primary-dark: #a66421;
+    --primary-light: #d6c39b;
+    --cafe: #1d1d1b;
+    --cafe-claro: #2a2a27;
+    --bg: #f5f5f4;
+    --bg-card: #ebe9e4;
+    --white: #ffffff;
+    --text: #1d1d1b;
+    --text-light: #5f5d58;
+    --price: #3f7a3a;
+    /* Fontes do guia: Altone (texto), Redig (títulos), Union Made (rótulos).
+       Na web usamos as equivalentes gratuitas mais próximas. */
+    --font: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-title: 'Antonio', 'Arial Narrow', sans-serif;
+    --font-label: 'Saira Condensed', 'Arial Narrow', sans-serif;
+    --shadow: 0 6px 24px rgba(29, 29, 27, 0.08);
+    --shadow-hover: 0 14px 36px rgba(29, 29, 27, 0.18);
+    --radius: 18px;
+    --radius-sm: 10px;
+    --transition: all 0.3s ease;
+}
+
+/* ========== RESET E BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+body.travado {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* ========== TIPOGRAFIA ========== */
+h1, h2 {
+    font-family: var(--font-title);
+    font-weight: 400;
+    color: var(--primary-dark);
+    line-height: 1.08;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 5.6vw, 4.3rem);
+    margin-bottom: 1.2rem;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 2.9rem);
+    margin-bottom: 0.6rem;
+}
+
+h1 em,
+h2 em {
+    font-style: italic;
+    color: var(--primary);
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.eyebrow {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 14px;
+}
+
+/* ========== BOTÕES ========== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 0.92rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: var(--transition);
+}
+
+.btn-sm {
+    padding: 9px 18px;
+    font-size: 0.8rem;
+}
+
+.btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+.btn-primary {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(125, 73, 20, 0.3);
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-ghost:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+/* ========== AVISO DE IDADE ========== */
+.idade-aviso {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(42, 26, 16, 0.85);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.idade-aviso[hidden] {
+    display: none;
+}
+
+.idade-caixa {
+    background: var(--cafe);
+    color: var(--white);
+    border-radius: var(--radius);
+    padding: 40px 32px;
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+    box-shadow: var(--shadow-hover);
+}
+
+.idade-logo {
+    width: 90px;
+    margin: 0 auto 20px;
+}
+
+.idade-caixa h2 {
+    color: var(--white);
+    font-size: 1.9rem;
+}
+
+.idade-caixa p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.idade-botoes {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.idade-caixa .btn-primary {
+    background: var(--primary);
+}
+
+.idade-caixa .btn-ghost {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.idade-recusa {
+    margin: 18px 0 0;
+    font-weight: 600;
+}
+
+/* ========== HEADER FLUTUANTE ========== */
+.header {
+    position: fixed;
+    top: 16px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 0 20px;
+    transition: var(--transition);
+}
+
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 60px;
+    padding: 8px 10px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.header.scrolled .nav {
+    box-shadow: var(--shadow-hover);
+}
+
+/* A logo é branca, então fica num selo escuro dentro do header */
+.logo {
+    background: var(--cafe);
+    border-radius: 50px;
+    padding: 8px 22px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 34px;
+    width: auto;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.nav-menu a:hover {
+    color: var(--primary);
+}
+
+.nav-acoes {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text);
+    transition: var(--transition);
+}
+
+.nav-icone:hover {
+    background: var(--bg);
+    color: var(--primary);
+}
+
+.nav-icone svg {
+    width: 21px;
+    height: 21px;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: var(--transition);
+}
+
+/* ========== HERO ========== */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding: 150px 0 140px;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 75% 45%, #f1dcc0 0%, rgba(241, 220, 192, 0) 55%),
+        linear-gradient(180deg, #f8efe3 0%, var(--bg) 100%);
+    overflow: hidden;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-content {
+    max-width: 540px;
+}
+
+.hero-subtitle {
+    font-size: 1.08rem;
+    margin-bottom: 32px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+/* Composição com 3 garrafas */
+.hero-garrafas {
+    position: relative;
+    height: 520px;
+}
+
+.hero-circulo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 440px;
+    height: 440px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #e7c79d 0%, #d9ac73 100%);
+    opacity: 0.55;
+    transform: translate(-50%, -50%);
+}
+
+/* As fotos têm fundo branco: o "multiply" faz o branco sumir no fundo creme */
+.garrafa {
+    position: absolute;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    object-fit: contain;
+    transition: transform 0.6s ease;
+}
+
+.garrafa-centro {
+    left: 50%;
+    width: 300px;
+    height: 400px;
+    bottom: 40px;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: flutuar 5s ease-in-out infinite;
+}
+
+.garrafa-esq {
+    left: 2%;
+    width: 240px;
+    height: 330px;
+    bottom: 20px;
+    transform: rotate(-6deg);
+}
+
+.garrafa-dir {
+    right: 2%;
+    width: 240px;
+    height: 330px;
+    bottom: 20px;
+    transform: rotate(6deg);
+}
+
+@keyframes flutuar {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+/* Onda decorativa na base do hero */
+.hero-onda {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 90px;
+    fill: var(--primary-dark);
+}
+
+/* ========== VANTAGENS ========== */
+.vantagens {
+    background: var(--primary-dark);
+    color: var(--white);
+    padding: 18px 0 22px;
+}
+
+.vantagens-lista {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px 30px;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.vantagens-lista div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vantagens-lista span {
+    font-size: 1.25rem;
+}
+
+/* ========== VITRINES DE PRODUTOS ========== */
+section {
+    padding: 100px 0;
+}
+
+.vitrine {
+    background: var(--bg);
+}
+
+.vitrine-alt {
+    background: var(--white);
+}
+
+.vitrine-topo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px 30px;
+    margin-bottom: 40px;
+}
+
+.vitrine-topo.centro {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.vitrine-topo h2 {
+    margin: 0;
+}
+
+.vitrine-topo p {
+    margin: 0;
+    max-width: 560px;
+}
+
+/* Abas de filtro */
+.filtros {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.filtro {
+    border: none;
+    background: transparent;
+    font-family: var(--font);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    padding: 9px 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.filtro:hover {
+    color: var(--primary-dark);
+}
+
+.filtro.ativo {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+/* Carrossel com rolagem horizontal */
+.carrossel {
+    position: relative;
+}
+
+.carrossel-trilho {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 3 * 22px) / 4);
+    gap: 22px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 6px 2px 20px;
+    scrollbar-width: none;
+}
+
+.carrossel-trilho::-webkit-scrollbar {
+    display: none;
+}
+
+.carrossel-seta {
+    position: absolute;
+    top: 38%;
+    z-index: 2;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: var(--white);
+    color: var(--primary-dark);
+    font-size: 1.8rem;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: var(--shadow-hover);
+    transition: var(--transition);
+}
+
+.carrossel-seta:hover {
+    background: var(--primary-dark);
+    color: var(--white);
+}
+
+.carrossel-seta:disabled {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.carrossel-seta.anterior {
+    left: -22px;
+}
+
+.carrossel-seta.proxima {
+    right: -22px;
+}
+
+/* Card de produto */
+.produto-card {
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.produto-card[hidden] {
+    display: none;
+}
+
+.produto-imagem {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    border-radius: var(--radius);
+    background: var(--bg-card);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.vitrine-alt .produto-imagem {
+    background: var(--bg);
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 18px;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s ease;
+}
+
+.produto-card:hover .produto-imagem img {
+    transform: scale(1.06);
+}
+
+.produto-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 11px;
+    border-radius: 50px;
+}
+
+.produto-card h3 {
+    font-size: 0.98rem;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 2px;
+}
+
+.produto-tipo {
+    font-size: 0.82rem;
+    color: #a1968c;
+    margin-bottom: 8px;
+}
+
+.produto-preco {
+    font-weight: 700;
+    color: var(--price);
+    margin: 0;
+}
+
+.produto-preco small {
+    font-weight: 500;
+    font-size: 0.78rem;
+}
+
+.produto-parcela {
+    font-size: 0.78rem;
+    color: var(--text-light);
+    margin: 0 0 14px;
+}
+
+.produto-comprar {
+    margin-top: auto;
+    align-self: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 2px;
+    transition: var(--transition);
+}
+
+.produto-card:hover .produto-comprar {
+    border-color: var(--primary-dark);
+}
+
+/* ========== DESTAQUE JAMBEIJO ========== */
+.destaque {
+    background: var(--cafe);
+    color: var(--white);
+    overflow: hidden;
+}
+
+.destaque-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.destaque h2 {
+    color: var(--white);
+}
+
+.destaque h2 em {
+    color: #f08a7b;
+}
+
+.destaque .eyebrow {
+    color: var(--primary-light);
+}
+
+.destaque p {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 1.05rem;
+}
+
+.destaque-lista {
+    margin: 24px 0 32px;
+    display: grid;
+    gap: 12px;
+}
+
+.destaque-lista li {
+    position: relative;
+    padding-left: 26px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+}
+
+.destaque-lista li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #f08a7b;
+}
+
+.destaque-lista strong {
+    color: var(--white);
+}
+
+.destaque-botoes {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.destaque .btn-primary {
+    background: var(--primary);
+}
+
+.destaque .btn-primary:hover {
+    background: var(--white);
+    color: var(--primary-dark);
+}
+
+.destaque-preco {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+
+.destaque-preco strong {
+    color: var(--white);
+}
+
+.destaque-imagem {
+    border-radius: 220px 220px var(--radius) var(--radius);
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+.destaque-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ========== SOBRE / DIFERENCIAIS ========== */
+.sobre {
+    background: var(--bg);
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.sobre-coluna {
+    display: grid;
+    gap: 38px;
+}
+
+.sobre-coluna:first-child {
+    text-align: right;
+}
+
+.diferencial h3 {
+    color: var(--primary-dark);
+}
+
+.diferencial p {
+    font-size: 0.93rem;
+    margin: 0;
+}
+
+.sobre-garrafa {
+    position: relative;
+    height: 460px;
+}
+
+.sobre-garrafa::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: var(--primary-light);
+    transform: translateX(-50%);
+}
+
+.sobre-garrafa img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    /* Suaviza as bordas do fundo da foto */
+    -webkit-mask-image: radial-gradient(ellipse 48% 52% at 50% 50%, #000 70%, transparent 100%);
+    mask-image: radial-gradient(ellipse 48% 52% at 50% 50%, #000 70%, transparent 100%);
+}
+
+/* ========== NOVIDADES ========== */
+.novidades {
+    background: var(--white);
+    padding: 90px 0;
+    overflow: hidden;
+}
+
+.novidades-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.novidades-imagem {
+    position: relative;
+    height: 380px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+/* Meia-lua caramelo atrás do kit, como no site de referência */
+.novidades-arco {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 540px;
+    height: 270px;
+    border-radius: 270px 270px 0 0;
+    background: var(--primary-dark);
+    transform: translateX(-50%);
+}
+
+.novidades-imagem img {
+    position: relative;
+    width: 360px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-hover);
+    margin-bottom: 30px;
+}
+
+.novidades-info h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.novidades-info p {
+    font-size: 1.05rem;
+    margin-bottom: 26px;
+}
+
+.novidades-info .novidades-nota {
+    font-size: 0.85rem;
+    margin: 16px 0 0;
+}
+
+/* ========== ÁREA AGENTE IA ========== */
+.ai-agent-area {
+    min-height: 0;
+    padding: 0;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    background: #141414;
+    color: var(--white);
+    padding: 70px 0 24px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+    gap: 40px;
+}
+
+.footer-logo {
+    width: 110px;
+    margin-bottom: 18px;
+}
+
+.footer-marca p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.92rem;
+    max-width: 320px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.footer-social a {
+    color: var(--primary-light);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.footer h4 {
+    color: var(--white);
+}
+
+.footer li {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.92rem;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    transition: var(--transition);
+}
+
+.footer a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 22px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px 30px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom p {
+    font-size: 0.82rem;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0;
+}
+
+/* Botão flutuante do WhatsApp */
+.whatsapp-flutuante {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25d366;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    z-index: 900;
+    transition: var(--transition);
+}
+
+.whatsapp-flutuante:hover {
+    transform: scale(1.08);
+}
+
+.whatsapp-flutuante svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* ========== RESPONSIVO ========== */
+@media (max-width: 1100px) {
+    .carrossel-trilho {
+        grid-auto-columns: calc((100% - 2 * 22px) / 3);
+    }
+
+    .carrossel-seta.anterior {
+        left: -8px;
+    }
+
+    .carrossel-seta.proxima {
+        right: -8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .nav-menu {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 20px;
+        right: 20px;
+        background: var(--white);
+        border-radius: var(--radius);
+        flex-direction: column;
+        gap: 18px;
+        padding: 26px 28px;
+        box-shadow: var(--shadow-hover);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: var(--transition);
+    }
+
+    .nav-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .hero {
+        padding-top: 130px;
+    }
+
+    .hero-grid,
+    .destaque-grid,
+    .novidades-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        max-width: none;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-garrafas {
+        height: 420px;
+        max-width: 560px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-circulo {
+        width: 340px;
+        height: 340px;
+    }
+
+    .garrafa-centro {
+        width: 230px;
+        height: 320px;
+    }
+
+    .garrafa-esq,
+    .garrafa-dir {
+        width: 180px;
+        height: 250px;
+    }
+
+    .destaque-imagem {
+        max-width: 420px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .sobre-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobre-garrafa {
+        grid-column: 1 / -1;
+        grid-row: 1;
+        height: 340px;
+    }
+
+    .sobre-coluna:first-child {
+        text-align: left;
+    }
+
+    .novidades-info {
+        text-align: center;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    section {
+        padding: 70px 0;
+    }
+
+    .header {
+        top: 10px;
+        padding: 0 12px;
+    }
+
+    .logo {
+        padding: 7px 16px;
+    }
+
+    .logo img {
+        height: 28px;
+    }
+
+    .nav-loja span {
+        display: none;
+    }
+
+    .nav-loja {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+    }
+
+    .nav-menu {
+        left: 12px;
+        right: 12px;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-garrafas {
+        height: 330px;
+    }
+
+    .hero-circulo {
+        width: 260px;
+        height: 260px;
+    }
+
+    .garrafa-centro {
+        width: 180px;
+        height: 250px;
+        bottom: 30px;
+    }
+
+    .garrafa-esq,
+    .garrafa-dir {
+        width: 130px;
+        height: 185px;
+        bottom: 16px;
+    }
+
+    .garrafa-esq {
+        left: 0;
+    }
+
+    .garrafa-dir {
+        right: 0;
+    }
+
+    .vantagens-lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 0.8rem;
+    }
+
+    .carrossel-trilho {
+        grid-auto-columns: 72%;
+        gap: 16px;
+    }
+
+    .carrossel-seta {
+        display: none;
+    }
+
+    .vitrine-topo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .sobre-coluna {
+        gap: 26px;
+    }
+
+    .novidades-arco {
+        width: 340px;
+        height: 170px;
+    }
+
+    .novidades-imagem {
+        height: 300px;
+    }
+
+    .novidades-imagem img {
+        width: 260px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================
+   VERSIÓN PARAGUAY: secciones nuevas
+   ===================================================== */
+
+/* Tarjetas sin precio: botón de consulta */
+.produto-consultar {
+    margin-top: auto;
+    align-self: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 2px;
+    transition: var(--transition);
+}
+
+.produto-card:hover .produto-consultar {
+    border-color: var(--primary-dark);
+}
+
+/* ========== ¿QUÉ ES LA CACHAÇA? ========== */
+.cachaca {
+    padding: 100px 0;
+    background: var(--white);
+}
+
+.cachaca-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.cachaca-imagem {
+    position: relative;
+    border-radius: var(--radius) var(--radius) 220px 220px;
+    overflow: hidden;
+    aspect-ratio: 4 / 5;
+    box-shadow: var(--shadow-hover);
+}
+
+.cachaca-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cachaca-info h2 {
+    margin-bottom: 18px;
+}
+
+.cachaca-info > p {
+    color: var(--text-light);
+    margin-bottom: 26px;
+}
+
+.cachaca-fatos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.cachaca-fato {
+    background: var(--bg);
+    border-radius: var(--radius);
+    padding: 22px 22px 20px;
+}
+
+.cachaca-fato strong {
+    display: block;
+    font-family: var(--font-title);
+    font-weight: 400;
+    font-size: 1.35rem;
+    color: var(--primary-dark);
+    margin-bottom: 4px;
+}
+
+.cachaca-fato span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+/* ========== PARA SU NEGOCIO ========== */
+.negocios {
+    padding: 100px 0;
+    background: var(--cafe);
+    color: var(--white);
+}
+
+.negocios .vitrine-topo h2 {
+    color: var(--white);
+}
+
+.negocios .vitrine-topo p {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.negocios-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-top: 10px;
+}
+
+.negocio {
+    background: var(--cafe-claro);
+    border: 1px solid rgba(233, 207, 169, 0.18);
+    border-radius: var(--radius);
+    padding: 30px 24px;
+    transition: var(--transition);
+}
+
+.negocio:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-light);
+}
+
+.negocio-numero {
+    display: inline-block;
+    font-family: var(--font-title);
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--primary-light);
+    margin-bottom: 16px;
+}
+
+.negocio h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--white);
+}
+
+.negocio p {
+    font-size: 0.92rem;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.negocios-acoes {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.negocios .btn-ghost {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.negocios .btn-ghost:hover {
+    background: var(--white);
+    color: var(--cafe);
+}
+
+@media (max-width: 992px) {
+    .cachaca-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .cachaca-imagem {
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .negocios-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .cachaca,
+    .negocios {
+        padding: 70px 0;
+    }
+
+    .cachaca-fatos,
+    .negocios-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =====================================================================
+   IDENTIDADE VISUAL CACHAÇA DAGA
+   Cores, fontes e logo conforme o "Guia de Identidade Visual" da marca.
+   ===================================================================== */
+h1, h2 {
+    font-family: var(--font-title);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 1.1;
+    color: var(--preto);
+}
+
+h1 {
+    font-size: clamp(2.8rem, 6vw, 4.9rem);
+}
+
+h2 {
+    font-size: clamp(2.2rem, 4.4vw, 3.3rem);
+}
+
+h1 em,
+h2 em {
+    font-style: normal;
+    color: var(--cobre);
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.eyebrow,
+h4,
+.nav-menu a,
+.btn,
+.filtro,
+.produto-tag,
+.produto-comprar,
+.vantagens-lista {
+    font-family: var(--font-label);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.eyebrow {
+    font-size: 0.86rem;
+    font-weight: 600;
+    color: var(--cobre);
+}
+
+.btn {
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.16em;
+}
+
+.btn-primary {
+    background: var(--preto);
+}
+
+.btn-primary:hover {
+    background: var(--cobre);
+    box-shadow: 0 8px 22px rgba(166, 100, 33, 0.3);
+}
+
+.btn-ghost {
+    color: var(--preto);
+    border-color: var(--preto);
+}
+
+.btn-ghost:hover {
+    background: var(--preto);
+}
+
+.nav-menu a {
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.vantagens-lista {
+    font-size: 0.92rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+/* Logo oficial em fundo claro: dispensa o selo escuro */
+.logo {
+    background: transparent;
+    padding: 4px 14px;
+}
+
+.logo img {
+    height: 44px;
+}
+
+.idade-aviso {
+    background: rgba(29, 29, 27, 0.88);
+}
+
+.idade-caixa {
+    background: var(--preto);
+    border-top: 4px solid var(--ouro);
+}
+
+.idade-logo {
+    width: 110px;
+}
+
+.idade-caixa .btn-primary {
+    background: var(--cobre);
+}
+
+.idade-caixa .btn-primary:hover {
+    background: var(--ouro);
+}
+
+.idade-caixa .btn-ghost:hover {
+    background: var(--prata);
+    color: var(--preto);
+}
+
+.hero {
+    background:
+        radial-gradient(circle at 75% 45%, rgba(158, 129, 74, 0.2) 0%, rgba(158, 129, 74, 0) 55%),
+        linear-gradient(180deg, #fbfbfa 0%, var(--bg) 100%);
+}
+
+.hero-circulo {
+    background: radial-gradient(circle, #cdb98f 0%, var(--ouro) 100%);
+    opacity: 0.38;
+}
+
+.vitrine-alt {
+    background: var(--white);
+}
+
+.produto-preco {
+    font-family: var(--font-title);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.destaque {
+    position: relative;
+}
+
+/* Ícone das adagas como marca d'água, como nas aplicações do guia */
+.destaque::before {
+    content: '';
+    position: absolute;
+    right: -80px;
+    top: -60px;
+    width: 420px;
+    height: 480px;
+    background: url('images/marca/daga-icone-prata.svg') center / contain no-repeat;
+    opacity: 0.05;
+    pointer-events: none;
+}
+
+.destaque h2,
+.destaque h2 em {
+    color: var(--white);
+}
+
+.destaque h2 em {
+    color: var(--primary-light);
+}
+
+.destaque .eyebrow {
+    color: var(--ouro);
+}
+
+.destaque .btn-primary {
+    background: var(--cobre);
+}
+
+.destaque .btn-primary:hover {
+    background: var(--ouro);
+}
+
+.novidades-arco {
+    background: var(--ouro);
+}
+
+.footer {
+    background: var(--preto);
+    border-top: 6px solid var(--ouro);
+}
+
+.footer-logo {
+    width: 120px;
+}
+
+.footer h4 {
+    color: var(--ouro);
+}
+
+@media (max-width: 640px) {
+    .logo {
+        padding: 4px 8px;
+    }
+
+    .logo img {
+        height: 34px;
+    }
+
+    .destaque::before {
+        width: 260px;
+        height: 300px;
+        right: -70px;
+    }
+}
+
+.negocios .btn-primary {
+    background: var(--cobre);
+}
+
+.negocios .btn-primary:hover {
+    background: var(--ouro);
+}
+
+.negocios .btn-ghost {
+    color: var(--white);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+.negocios .btn-ghost:hover {
+    background: var(--prata);
+    color: var(--preto);
+}
+
+.cachaca-fato strong {
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+/* ========== FOTOS DA MARCA (pasta images/fotos) ========== */
+/* Garrafas recortadas (fundo transparente): sombra no lugar do "multiply" */
+.hero-garrafas .garrafa {
+    mix-blend-mode: normal;
+    filter: drop-shadow(0 22px 26px rgba(29, 29, 27, 0.28));
+}
+
+.hero-garrafas .garrafa-centro {
+    width: 300px;
+    height: 450px;
+    bottom: 30px;
+}
+
+/* Kit em MDF recortado sobre o arco */
+.novidades-imagem img.novidades-kit {
+    width: 440px;
+    border-radius: 0;
+    box-shadow: none;
+    filter: drop-shadow(0 20px 26px rgba(29, 29, 27, 0.3));
+}
+
+/* Foto no topo de cada card de negócio */
+.negocio {
+    padding: 0 0 26px;
+    overflow: hidden;
+}
+
+.negocio > :not(.negocio-foto) {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.negocio-foto {
+    aspect-ratio: 16 / 10;
+    margin-bottom: 22px;
+    overflow: hidden;
+}
+
+.negocio-foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.negocio:hover .negocio-foto img {
+    transform: scale(1.05);
+}
+
+.negocio-foto-kit {
+    background: radial-gradient(circle at 50% 60%, #3a3a36 0%, var(--cafe-claro) 70%);
+    padding: 12px;
+}
+
+.negocio-foto-kit img {
+    object-fit: contain;
+}
+
+/* ========== GALERÍA ========== */
+.galeria {
+    background: var(--white);
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 210px;
+    grid-auto-flow: dense;
+    gap: 14px;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.galeria-grid img:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.galeria-ancha {
+    grid-column: span 2;
+}
+
+.galeria-alta {
+    grid-row: span 2;
+}
+
+/* Logo vertical Bebidas Daga (aviso de idade e rodapé) */
+.idade-logo {
+    width: auto;
+    height: 170px;
+}
+
+.footer-logo {
+    width: auto;
+    height: 150px;
+}
+
+@media (max-width: 992px) {
+    .galeria-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 170px;
+    }
+
+    .novidades-imagem img.novidades-kit {
+        width: 340px;
+    }
+
+    .hero-garrafas .garrafa-centro {
+        width: 230px;
+        height: 340px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-garrafas .garrafa-centro {
+        width: 180px;
+        height: 270px;
+        bottom: 26px;
+    }
+
+    .galeria-grid {
+        grid-auto-rows: 130px;
+        gap: 10px;
+    }
+
+    .idade-logo {
+        height: 130px;
+    }
+}
+
+@media (min-width: 993px) {
+    .hero-garrafas .garrafa-esq,
+    .hero-garrafas .garrafa-dir {
+        width: 210px;
+        height: 300px;
+    }
+}
