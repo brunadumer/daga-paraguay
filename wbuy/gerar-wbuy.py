@@ -113,6 +113,7 @@ BASE_CSS = """@import url('https://fonts.googleapis.com/css2?family=Antonio:wght
 #daga-py section { margin: 0; float: none; width: auto; }
 #daga-py button, #daga-py input, #daga-py select, #daga-py textarea { font-family: inherit; }
 #informacoes > .central > .titulo { display: none; }
+#informacoes .texto > p:first-child { display: none; }
 """
 
 # ---------- Montagem e codificação ----------
