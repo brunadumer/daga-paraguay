@@ -1,0 +1,744 @@
+<!-- DAGA BEBIDAS - PAGINA PARAGUAY (ESPANHOL) PARA A WBUY. Gerado por wbuy/gerar-wbuy.py: edite o site e gere de novo. -->
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500;600;700&family=Outfit:wght@300;400;500;600;700&family=Saira+Condensed:wght@500;600;700&display=swap');
+#daga-py { position: relative; overflow: hidden; text-align: left; font-size: 16px; }
+#daga-py *, #daga-py *::before, #daga-py *::after { box-sizing: border-box; }
+#daga-py h1, #daga-py h2, #daga-py h3, #daga-py h4, #daga-py p, #daga-py ul, #daga-py li, #daga-py form { margin: 0; padding: 0; border: 0; background: none; text-shadow: none; }
+#daga-py ul, #daga-py li { list-style: none; }
+#daga-py a { text-decoration: none; }
+#daga-py img { display: block; max-width: 100%; border: 0; }
+#daga-py section { margin: 0; float: none; width: auto; }
+#daga-py button, #daga-py input, #daga-py select, #daga-py textarea { font-family: inherit; }
+#daga-py { --cobre: #a66421; --ouro: #9e814a; --prata: #f5f5f4; --preto: #1d1d1b; --primary: #a66421; --primary-dark: #a66421; --primary-light: #d6c39b; --cafe: #1d1d1b; --cafe-claro: #2a2a27; --bg: #f5f5f4; --bg-card: #ebe9e4; --white: #ffffff; --text: #1d1d1b; --text-light: #5f5d58; --price: #3f7a3a; --font: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; --font-title: 'Antonio', 'Arial Narrow', sans-serif; --font-label: 'Saira Condensed', 'Arial Narrow', sans-serif; --shadow: 0 6px 24px rgba(29, 29, 27, 0.08); --shadow-hover: 0 14px 36px rgba(29, 29, 27, 0.18); --radius: 18px; --radius-sm: 10px; --transition: all 0.3s ease; }
+#daga-py * { margin: 0; padding: 0; box-sizing: border-box; }
+#daga-py { scroll-behavior: smooth; }
+#daga-py { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; overflow-x: hidden; }
+#daga-py .py-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+#daga-py img { max-width: 100%; height: auto; display: block; }
+#daga-py a { text-decoration: none; color: inherit; }
+#daga-py ul { list-style: none; }
+#daga-py h1, #daga-py h2 { font-family: var(--font-title); font-weight: 400; color: var(--primary-dark); line-height: 1.08; }
+#daga-py h1 { font-size: clamp(2.5rem, 5.6vw, 4.3rem); margin-bottom: 1.2rem; }
+#daga-py h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 0.6rem; }
+#daga-py h1 em, #daga-py h2 em { font-style: italic; color: var(--primary); }
+#daga-py h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 0.4rem; }
+#daga-py h4 { font-size: 0.85rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 14px; }
+#daga-py p { color: var(--text-light); margin-bottom: 1rem; }
+#daga-py .py-eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--primary); margin-bottom: 14px; }
+#daga-py .py-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 14px 30px; border-radius: 50px; font-family: var(--font); font-weight: 600; font-size: 0.92rem; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; border: 2px solid transparent; transition: var(--transition); }
+#daga-py .py-btn svg { width: 18px; height: 18px; }
+#daga-py .py-btn-primary { background: var(--primary-dark); color: var(--white); }
+#daga-py .py-btn-primary:hover { background: var(--primary); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(125, 73, 20, 0.3); }
+#daga-py .py-btn-ghost { background: transparent; color: var(--primary-dark); border-color: var(--primary-dark); }
+#daga-py .py-btn-ghost:hover { background: var(--primary-dark); color: var(--white); }
+#daga-py .py-hero { position: relative; min-height: 100vh; padding: 150px 0 140px; display: flex; align-items: center; background: radial-gradient(circle at 75% 45%, #f1dcc0 0%, rgba(241, 220, 192, 0) 55%), linear-gradient(180deg, #f8efe3 0%, var(--bg) 100%); overflow: hidden; }
+#daga-py .py-hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; width: 100%; }
+#daga-py .py-hero-content { max-width: 540px; }
+#daga-py .py-hero-subtitle { font-size: 1.08rem; margin-bottom: 32px; }
+#daga-py .py-hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+#daga-py .py-hero-circulo { position: absolute; left: 50%; top: 50%; width: 440px; height: 440px; border-radius: 50%; background: radial-gradient(circle, #e7c79d 0%, #d9ac73 100%); opacity: 0.55; transform: translate(-50%, -50%); }
+@keyframes py-flutuar {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+}
+#daga-py .py-hero-onda { position: absolute; left: 0; bottom: -1px; width: 100%; height: 90px; fill: var(--primary-dark); }
+#daga-py section { padding: 100px 0; }
+#daga-py .py-vitrine { background: var(--bg); }
+#daga-py .py-vitrine-alt { background: var(--white); }
+#daga-py .py-vitrine-topo { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px 30px; margin-bottom: 40px; }
+#daga-py .py-vitrine-topo.py-centro { flex-direction: column; align-items: center; text-align: center; }
+#daga-py .py-vitrine-topo h2 { margin: 0; }
+#daga-py .py-vitrine-topo p { margin: 0; max-width: 560px; }
+#daga-py .py-filtros { display: flex; gap: 6px; flex-wrap: wrap; }
+#daga-py .py-filtro { border: none; background: transparent; font-family: var(--font); font-size: 0.82rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); padding: 9px 18px; border-radius: 50px; cursor: pointer; transition: var(--transition); }
+#daga-py .py-filtro:hover { color: var(--primary-dark); }
+#daga-py .py-filtro.py-ativo { background: var(--primary-dark); color: var(--white); }
+#daga-py .py-carrossel { position: relative; }
+#daga-py .py-carrossel-trilho { display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 3 * 22px) / 4); gap: 22px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 6px 2px 20px; scrollbar-width: none; }
+#daga-py .py-carrossel-trilho::-webkit-scrollbar { display: none; }
+#daga-py .py-carrossel-seta { position: absolute; top: 38%; z-index: 2; width: 46px; height: 46px; border-radius: 50%; border: none; background: var(--white); color: var(--primary-dark); font-size: 1.8rem; line-height: 1; cursor: pointer; box-shadow: var(--shadow-hover); transition: var(--transition); }
+#daga-py .py-carrossel-seta:hover { background: var(--primary-dark); color: var(--white); }
+#daga-py .py-carrossel-seta:disabled { opacity: 0; pointer-events: none; }
+#daga-py .py-carrossel-seta.py-anterior { left: -22px; }
+#daga-py .py-carrossel-seta.py-proxima { right: -22px; }
+#daga-py .py-produto-card { scroll-snap-align: start; display: flex; flex-direction: column; text-align: center; }
+#daga-py .py-produto-card[hidden] { display: none; }
+#daga-py .py-produto-imagem { position: relative; aspect-ratio: 4 / 5; border-radius: var(--radius); background: var(--bg-card); overflow: hidden; margin-bottom: 16px; }
+#daga-py .py-vitrine-alt .py-produto-imagem { background: var(--bg); }
+#daga-py .py-produto-imagem img { width: 100%; height: 100%; object-fit: contain; padding: 18px; mix-blend-mode: multiply; transition: transform 0.5s ease; }
+#daga-py .py-produto-card:hover .py-produto-imagem img { transform: scale(1.06); }
+#daga-py .py-produto-tag { position: absolute; top: 14px; left: 14px; background: var(--primary); color: var(--white); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; padding: 4px 11px; border-radius: 50px; }
+#daga-py .py-produto-card h3 { font-size: 0.98rem; font-weight: 500; color: var(--text); margin-bottom: 2px; }
+#daga-py .py-produto-tipo { font-size: 0.82rem; color: #a1968c; margin-bottom: 8px; }
+#daga-py .py-destaque { background: var(--cafe); color: var(--white); overflow: hidden; }
+#daga-py .py-destaque h2 { color: var(--white); }
+#daga-py .py-destaque h2 em { color: #f08a7b; }
+#daga-py .py-destaque .py-eyebrow { color: var(--primary-light); }
+#daga-py .py-destaque p { color: rgba(255, 255, 255, 0.78); font-size: 1.05rem; }
+#daga-py .py-destaque .py-btn-primary { background: var(--primary); }
+#daga-py .py-destaque .py-btn-primary:hover { background: var(--white); color: var(--primary-dark); }
+@media (max-width: 1100px) {
+    #daga-py .py-carrossel-trilho { grid-auto-columns: calc((100% - 2 * 22px) / 3); }
+    #daga-py .py-carrossel-seta.py-anterior { left: -8px; }
+    #daga-py .py-carrossel-seta.py-proxima { right: -8px; }
+}
+@media (max-width: 992px) {
+    #daga-py .py-hero { padding-top: 130px; }
+    #daga-py .py-hero-grid { grid-template-columns: 1fr; }
+    #daga-py .py-hero-content { max-width: none; text-align: center; }
+    #daga-py .py-hero-buttons { justify-content: center; }
+    #daga-py .py-hero-circulo { width: 340px; height: 340px; }
+}
+@media (max-width: 640px) {
+    #daga-py section { padding: 70px 0; }
+    #daga-py .py-hero-buttons .py-btn { width: 100%; }
+    #daga-py .py-hero-circulo { width: 260px; height: 260px; }
+    #daga-py .py-carrossel-trilho { grid-auto-columns: 72%; gap: 16px; }
+    #daga-py .py-carrossel-seta { display: none; }
+    #daga-py .py-vitrine-topo { flex-direction: column; align-items: flex-start; }
+}
+#daga-py .py-produto-consultar { margin-top: auto; align-self: center; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--primary-dark); border-bottom: 2px solid var(--primary-light); padding-bottom: 2px; transition: var(--transition); }
+#daga-py .py-produto-card:hover .py-produto-consultar { border-color: var(--primary-dark); }
+#daga-py .py-negocios { padding: 100px 0; background: var(--cafe); color: var(--white); }
+#daga-py .py-negocios .py-vitrine-topo h2 { color: var(--white); }
+#daga-py .py-negocios .py-vitrine-topo p { color: rgba(255, 255, 255, 0.75); }
+#daga-py .py-negocios-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 10px; }
+#daga-py .py-negocio { background: var(--cafe-claro); border: 1px solid rgba(233, 207, 169, 0.18); border-radius: var(--radius); padding: 30px 24px; transition: var(--transition); }
+#daga-py .py-negocio:hover { transform: translateY(-4px); border-color: var(--primary-light); }
+#daga-py .py-negocio-numero { display: inline-block; font-family: var(--font-title); font-size: 2rem; line-height: 1; color: var(--primary-light); margin-bottom: 16px; }
+#daga-py .py-negocio h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: var(--white); }
+#daga-py .py-negocio p { font-size: 0.92rem; color: rgba(255, 255, 255, 0.72); }
+#daga-py .py-negocios-acoes { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 50px; }
+#daga-py .py-negocios .py-btn-ghost { color: var(--white); border-color: rgba(255, 255, 255, 0.6); }
+#daga-py .py-negocios .py-btn-ghost:hover { background: var(--white); color: var(--cafe); }
+@media (max-width: 992px) {
+    #daga-py .py-negocios-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+    #daga-py .py-negocios { padding: 70px 0; }
+    #daga-py .py-negocios-grid { grid-template-columns: 1fr; }
+}
+#daga-py h1, #daga-py h2 { font-family: var(--font-title); font-weight: 700; text-transform: uppercase; letter-spacing: 0.01em; line-height: 1.1; color: var(--preto); }
+#daga-py h1 { font-size: clamp(2.8rem, 6vw, 4.9rem); }
+#daga-py h2 { font-size: clamp(2.2rem, 4.4vw, 3.3rem); }
+#daga-py h1 em, #daga-py h2 em { font-style: normal; color: var(--cobre); }
+#daga-py h3 { font-weight: 600; }
+#daga-py .py-eyebrow, #daga-py h4, #daga-py .py-btn, #daga-py .py-filtro, #daga-py .py-produto-tag { font-family: var(--font-label); letter-spacing: 0.18em; text-transform: uppercase; }
+#daga-py .py-eyebrow { font-size: 0.86rem; font-weight: 600; color: var(--cobre); }
+#daga-py .py-btn { font-weight: 600; font-size: 0.95rem; letter-spacing: 0.16em; }
+#daga-py .py-btn-primary { background: var(--preto); }
+#daga-py .py-btn-primary:hover { background: var(--cobre); box-shadow: 0 8px 22px rgba(166, 100, 33, 0.3); }
+#daga-py .py-btn-ghost { color: var(--preto); border-color: var(--preto); }
+#daga-py .py-btn-ghost:hover { background: var(--preto); }
+#daga-py .py-hero { background: radial-gradient(circle at 75% 45%, rgba(158, 129, 74, 0.2) 0%, rgba(158, 129, 74, 0) 55%), linear-gradient(180deg, #fbfbfa 0%, var(--bg) 100%); }
+#daga-py .py-hero-circulo { background: radial-gradient(circle, #cdb98f 0%, var(--ouro) 100%); opacity: 0.38; }
+#daga-py .py-vitrine-alt { background: var(--white); }
+#daga-py .py-destaque { position: relative; }
+#daga-py .py-destaque::before { content: ''; position: absolute; right: -80px; top: -60px; width: 420px; height: 480px; background: url('https://brunadumer.github.io/daga-paraguay/images/marca/daga-icone-prata.svg') center / contain no-repeat; opacity: 0.05; pointer-events: none; }
+#daga-py .py-destaque h2, #daga-py .py-destaque h2 em { color: var(--white); }
+#daga-py .py-destaque h2 em { color: var(--primary-light); }
+#daga-py .py-destaque .py-eyebrow { color: var(--ouro); }
+#daga-py .py-destaque .py-btn-primary { background: var(--cobre); }
+#daga-py .py-destaque .py-btn-primary:hover { background: var(--ouro); }
+@media (max-width: 640px) {
+    #daga-py .py-destaque::before { width: 260px; height: 300px; right: -70px; }
+}
+#daga-py .py-negocios .py-btn-primary { background: var(--cobre); }
+#daga-py .py-negocios .py-btn-primary:hover { background: var(--ouro); }
+#daga-py .py-negocios .py-btn-ghost { color: var(--white); border-color: rgba(255, 255, 255, 0.6); }
+#daga-py .py-negocios .py-btn-ghost:hover { background: var(--prata); color: var(--preto); }
+#daga-py .py-negocio { padding: 0 0 26px; overflow: hidden; }
+#daga-py .py-negocio > :not(.py-negocio-foto) { margin-left: 24px; margin-right: 24px; }
+#daga-py .py-negocio-foto { aspect-ratio: 16 / 10; margin-bottom: 22px; overflow: hidden; }
+#daga-py .py-negocio-foto img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+#daga-py .py-negocio:hover .py-negocio-foto img { transform: scale(1.05); }
+#daga-py .py-negocio-foto-kit { background: radial-gradient(circle at 50% 60%, #3a3a36 0%, var(--cafe-claro) 70%); padding: 12px; }
+#daga-py .py-negocio-foto-kit img { object-fit: contain; }
+#daga-py .py-hero-content { max-width: 600px; }
+#daga-py .py-hero-lema { font-family: var(--font-label); font-weight: 600; font-size: clamp(1.25rem, 2.2vw, 1.6rem); letter-spacing: 0.04em; text-transform: uppercase; color: var(--cobre); margin: 6px 0 16px; }
+#daga-py .py-hero-foto { position: relative; display: flex; justify-content: center; align-items: center; min-height: 520px; }
+#daga-py .py-hero-foto img { position: relative; width: min(380px, 100%); aspect-ratio: 2 / 3; object-fit: cover; border-radius: 200px 200px var(--radius) var(--radius); box-shadow: 0 30px 60px rgba(29, 29, 27, 0.28); }
+#daga-py .py-hero-onda { fill: var(--white); }
+#daga-py .py-esencia { background: var(--white); }
+#daga-py .py-esencia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; align-items: center; }
+#daga-py .py-esencia-info h2 { margin-bottom: 22px; }
+#daga-py .py-esencia-frase { margin-top: 26px; padding-left: 18px; border-left: 4px solid var(--cobre); font-family: var(--font-label); font-weight: 600; font-size: 1.25rem; letter-spacing: 0.02em; text-transform: uppercase; color: var(--preto); }
+#daga-py .py-esencia-fotos { position: relative; padding-bottom: 90px; }
+#daga-py .py-esencia-fotos img { border-radius: var(--radius); object-fit: cover; box-shadow: var(--shadow-hover); }
+#daga-py .py-esencia-foto-1 { width: 88%; aspect-ratio: 3 / 2; }
+#daga-py .py-esencia-foto-2 { position: absolute; right: 0; bottom: 0; width: 58%; aspect-ratio: 3 / 2; border: 6px solid var(--white); }
+#daga-py .py-mision { padding: 110px 0; }
+#daga-py .py-mision-conteudo { position: relative; max-width: 860px; text-align: center; }
+#daga-py .py-mision h2 { margin-bottom: 26px; }
+#daga-py .py-mision p { font-size: 1.08rem; }
+#daga-py .py-productos { background: var(--bg); }
+#daga-py .py-linea { margin-top: 70px; }
+#daga-py .py-linea-titulo { font-family: var(--font-title); font-weight: 700; font-size: clamp(1.8rem, 3vw, 2.4rem); text-transform: uppercase; color: var(--preto); margin-bottom: 4px; }
+#daga-py .py-linea-lema { font-family: var(--font-label); font-weight: 600; font-size: 1.15rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--cobre); margin-bottom: 18px; }
+#daga-py #licores .py-linea-texto { max-width: 760px; }
+#daga-py .py-destacados-titulo { margin: 36px 0 18px; }
+#daga-py .py-destacados-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+#daga-py .py-destacado { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); display: flex; flex-direction: column; transition: var(--transition); }
+#daga-py .py-destacado:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
+#daga-py .py-destacado img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; }
+#daga-py .py-destacado-texto { padding: 20px 22px 22px; }
+#daga-py .py-destacado h3 { font-family: var(--font-title); font-weight: 700; font-size: 1.5rem; text-transform: uppercase; color: var(--preto); margin-bottom: 8px; line-height: 1.1; }
+#daga-py .py-destacado h3 span { display: block; font-family: var(--font-label); font-size: 0.95rem; letter-spacing: 0.06em; color: var(--cobre); margin-top: 2px; }
+#daga-py .py-destacado p { font-size: 0.93rem; margin: 0; }
+#daga-py .py-destacado-estrella { grid-column: 1 / -1; flex-direction: row; background: var(--preto); }
+#daga-py .py-destacado-estrella img { width: 42%; aspect-ratio: auto; min-height: 320px; }
+#daga-py .py-destacado-estrella .py-destacado-texto { align-self: center; padding: 40px 48px; }
+#daga-py .py-destacado-estrella h3 { color: var(--white); font-size: clamp(2rem, 3.4vw, 2.8rem); }
+#daga-py .py-destacado-estrella h3 span { color: var(--ouro); font-size: 1.15rem; }
+#daga-py .py-destacado-estrella p { color: rgba(255, 255, 255, 0.8); font-size: 1.05rem; }
+#daga-py .py-linea-acao { margin-top: 34px; text-align: center; }
+#daga-py .py-linea-dupla { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; padding-top: 70px; border-top: 1px solid rgba(29, 29, 27, 0.1); }
+#daga-py .py-linea-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+#daga-py .py-linea-fotos img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius-sm); box-shadow: var(--shadow); }
+#daga-py .py-linea-fotos .py-linea-foto-grande { grid-column: 1 / -1; }
+#daga-py .py-linea-fotos-uma { grid-template-columns: 1fr; max-width: 440px; justify-self: center; }
+#daga-py .py-linea-fotos-uma img { aspect-ratio: 3 / 4; border-radius: 200px 200px var(--radius) var(--radius); }
+#daga-py .py-linea-lista-titulo { font-weight: 600; color: var(--preto); margin-bottom: 10px; }
+#daga-py .py-linea-lista { display: grid; gap: 8px; margin-bottom: 28px; }
+#daga-py .py-linea-lista li { position: relative; padding-left: 22px; color: var(--text-light); }
+#daga-py .py-linea-lista li::before { content: ''; position: absolute; left: 0; top: 9px; width: 9px; height: 9px; border-radius: 50%; background: var(--cobre); }
+#daga-py .py-razones { background: var(--bg); }
+#daga-py .py-razones-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; }
+#daga-py .py-razon { background: var(--white); border-radius: var(--radius); border-top: 4px solid var(--cobre); padding: 28px 22px; box-shadow: var(--shadow); }
+#daga-py .py-razon-numero { display: block; font-family: var(--font-title); font-weight: 700; font-size: 2.3rem; line-height: 1; color: var(--ouro); margin-bottom: 14px; }
+#daga-py .py-razon h3 { font-size: 1.08rem; margin-bottom: 8px; color: var(--preto); }
+#daga-py .py-razon p { font-size: 0.92rem; margin: 0; }
+#daga-py .py-negocios .py-vitrine-topo p { max-width: 720px; }
+#daga-py .py-negocios .py-eyebrow { color: var(--ouro); }
+#daga-py .py-negocios h2 em { color: var(--primary-light); }
+#daga-py .py-negocios-abertos { text-align: center; font-family: var(--font-label); font-weight: 600; font-size: 1.1rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ouro); margin-bottom: 22px; }
+#daga-py .py-negocios-cierre { text-align: center; margin-top: 60px; }
+#daga-py .py-negocios-cierre h3 { font-family: var(--font-title); font-weight: 700; font-size: clamp(1.8rem, 3vw, 2.4rem); text-transform: uppercase; color: var(--white); margin-bottom: 10px; }
+#daga-py .py-negocios-cierre p { color: rgba(255, 255, 255, 0.75); max-width: 560px; margin: 0 auto; }
+#daga-py .py-negocios-cierre .py-negocios-acoes { margin-top: 28px; }
+#daga-py .py-conectemos { background: var(--white); }
+#daga-py .py-conectemos-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 60px; align-items: start; }
+#daga-py .py-conectemos-foto { position: sticky; top: 110px; }
+#daga-py .py-conectemos-foto img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; border-radius: var(--radius) var(--radius) 200px 200px; box-shadow: var(--shadow-hover); }
+#daga-py .py-conectemos-info h2 { margin-bottom: 20px; }
+#daga-py .py-formulario { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 18px; margin-top: 28px; padding: 30px; background: var(--bg); border-radius: var(--radius); }
+#daga-py .py-campo { display: flex; flex-direction: column; gap: 6px; }
+#daga-py .py-campo-largo { grid-column: 1 / -1; }
+#daga-py .py-campo label { font-family: var(--font-label); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--preto); }
+#daga-py .py-campo input, #daga-py .py-campo select, #daga-py .py-campo textarea { width: 100%; font: inherit; font-size: 0.97rem; color: var(--preto); background: var(--white); border: 1px solid rgba(29, 29, 27, 0.18); border-radius: var(--radius-sm); padding: 12px 14px; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+#daga-py .py-campo textarea { resize: vertical; }
+#daga-py .py-campo input:focus, #daga-py .py-campo select:focus, #daga-py .py-campo textarea:focus { outline: none; border-color: var(--cobre); box-shadow: 0 0 0 3px rgba(166, 100, 33, 0.18); }
+#daga-py .py-form-erro { grid-column: 1 / -1; margin: 0; color: #b3261e; font-size: 0.9rem; }
+#daga-py .py-formulario .py-btn { justify-self: start; }
+@media (max-width: 1100px) {
+    #daga-py .py-razones-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 992px) {
+    #daga-py .py-hero-foto { min-height: 0; margin-top: 10px; }
+    #daga-py .py-hero-foto img { width: min(320px, 100%); }
+    #daga-py .py-esencia-grid, #daga-py .py-linea-dupla, #daga-py .py-conectemos-grid { grid-template-columns: 1fr; gap: 40px; }
+    #daga-py .py-esencia-fotos { max-width: 620px; width: 100%; margin: 0 auto; }
+    #daga-py .py-destacados-grid { grid-template-columns: 1fr 1fr; }
+    #daga-py .py-linea-kits .py-linea-fotos { order: -1; }
+    #daga-py .py-razones-grid { grid-template-columns: 1fr 1fr; }
+    #daga-py .py-conectemos-foto { position: static; max-width: 380px; width: 100%; margin: 0 auto; }
+    #daga-py .py-conectemos-foto img { aspect-ratio: 4 / 5; }
+}
+@media (max-width: 640px) {
+    #daga-py .py-esencia-fotos { padding-bottom: 60px; }
+    #daga-py .py-destacados-grid, #daga-py .py-razones-grid { grid-template-columns: 1fr; }
+    #daga-py .py-destacado-estrella { flex-direction: column; }
+    #daga-py .py-destacado-estrella img { width: 100%; min-height: 0; aspect-ratio: 4 / 3; }
+    #daga-py .py-destacado-estrella .py-destacado-texto { padding: 24px 22px 26px; }
+    #daga-py .py-formulario { grid-template-columns: 1fr; padding: 22px 18px; }
+    #daga-py .py-formulario .py-btn { justify-self: stretch; }
+    #daga-py .py-mision { padding: 80px 0; }
+}
+</style>
+<div id="daga-py">
+<!-- ========== PORTADA ========== -->
+    <section class="py-hero" id="inicio">
+        <div class="py-container py-hero-grid">
+            <div class="py-hero-content">
+                <span class="py-eyebrow">Daga Bebidas</span>
+                <h1>Aut&#233;ntica. Audaz. <em>Brasile&#241;a.</em></h1>
+                <p class="py-hero-lema">Nuevas oportunidades para tu negocio.</p>
+                <p class="py-hero-subtitle">Creamos licores innovadores y seleccionamos cachazas brasile&#241;as con personalidad, combinando tradici&#243;n, calidad y experiencias sensoriales sorprendentes. Conoc&#233; nuestro portafolio y descubr&#237; nuevas oportunidades comerciales para el mercado paraguayo.</p>
+                <div class="py-hero-buttons">
+                    <a href="#esencia" class="py-btn py-btn-primary">Conoc&#233; nuestra marca</a>
+                    <a href="#productos" class="py-btn py-btn-ghost">Explor&#225; nuestros productos</a>
+                </div>
+            </div>
+            <div class="py-hero-foto">
+                <div class="py-hero-circulo"></div>
+                <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/hero-coquetel.webp" alt="Cachaza Daga Cl&#225;sica con un c&#243;ctel c&#237;trico frente al logo de Bebidas Daga">
+            </div>
+        </div>
+        <svg class="py-hero-onda" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80C240 20 480 120 760 70s520-60 680 0v50H0Z"/></svg>
+    </section>
+
+    <!-- ========== NUESTRA ESENCIA ========== -->
+    <section class="py-esencia" id="esencia">
+        <div class="py-container py-esencia-grid">
+            <div class="py-esencia-info">
+                <span class="py-eyebrow">Nuestra esencia</span>
+                <h2>Nacimos en Brasil. <em>Creamos para sorprender.</em></h2>
+                <p>Daga Bebidas es una marca brasile&#241;a que cree que una buena bebida es mucho m&#225;s que su sabor: es cultura, identidad, conexi&#243;n y experiencia.</p>
+                <p>Inspirados en la riqueza de los ingredientes brasile&#241;os y en nuestra tradici&#243;n de producir bebidas con personalidad, desarrollamos productos que unen autenticidad, calidad e innovaci&#243;n.</p>
+                <p>Nuestro portafolio combina la esencia de la cachaza brasile&#241;a con licores de sabores originales, creados para quienes buscan descubrir algo diferente.</p>
+                <p class="py-esencia-frase">Tradici&#243;n en nuestras ra&#237;ces. Innovaci&#243;n en cada botella.</p>
+            </div>
+            <div class="py-esencia-fotos">
+                <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/esencia-linea.webp" alt="L&#237;nea completa de licores Daga en la barra" loading="lazy" class="py-esencia-foto-1">
+                <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/esencia-bar.webp" alt="Licores y miniaturas Daga frente a barriles de madera" loading="lazy" class="py-esencia-foto-2">
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== NUESTRA MISI&#211;N ========== -->
+    <section class="py-destaque py-mision" id="mision">
+        <div class="py-container py-mision-conteudo">
+            <span class="py-eyebrow">Nuestra misi&#243;n</span>
+            <h2>Democratizar el acceso a bebidas <em>aut&#233;nticas y de calidad.</em></h2>
+            <p>Nuestra misi&#243;n es acercar a m&#225;s personas al universo de la cachaza y los licores brasile&#241;os, ofreciendo bebidas de calidad, con identidad propia y experiencias sensoriales &#250;nicas.</p>
+            <p>Buscamos romper paradigmas, valorizar la cultura brasile&#241;a y demostrar que la cachaza y los licores pueden ocupar un lugar destacado en diferentes momentos de consumo: desde una celebraci&#243;n entre amigos hasta la cocteler&#237;a contempor&#225;nea.</p>
+            <p>Creemos en la innovaci&#243;n sin perder nuestras ra&#237;ces, en las relaciones comerciales duraderas y en el potencial de llevar el sabor de Brasil m&#225;s all&#225; de nuestras fronteras.</p>
+        </div>
+    </section>
+
+    <!-- ========== NUESTROS PRODUCTOS ========== -->
+    <section class="py-productos" id="productos">
+        <div class="py-container">
+            <div class="py-vitrine-topo py-centro">
+                <span class="py-eyebrow">Nuestros productos</span>
+                <h2>Sabores aut&#233;nticos. <em>Experiencias extraordinarias.</em></h2>
+                <p>Nuestro portafolio re&#250;ne bebidas vers&#225;tiles, con diferentes perfiles sensoriales, presentaciones y propuestas de consumo.</p>
+            </div>
+
+            <!-- Licores -->
+            <div class="py-linea" id="licores">
+                <div class="py-linea-texto">
+                    <h3 class="py-linea-titulo">Licores Daga</h3>
+                    <p class="py-linea-lema">Creatividad brasile&#241;a en cada sorbo.</p>
+                    <p>Desarrollamos licores que combinan ingredientes tradicionales y propuestas innovadoras, con sabores que despiertan la curiosidad y sorprenden al paladar.</p>
+                    <p>Desde opciones dulces y cremosas hasta combinaciones intensas y ex&#243;ticas, cada producto expresa nuestra pasi&#243;n por crear experiencias diferentes.</p>
+                </div>
+                <h4 class="py-destacados-titulo">Productos destacados</h4>
+                <div class="py-destacados-grid">
+                    <article class="py-destacado py-destacado-estrella">
+                        <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/jambeijo.webp" alt="Botella de Jambeijo, el Licor del Beso" loading="lazy">
+                        <div class="py-destacado-texto">
+                            <h3>Jambeijo <span>El Licor del Beso</span></h3>
+                            <p>Nuestro licor de jambu, canela y pimienta de Jamaica. Una combinaci&#243;n ex&#243;tica que provoca una sorprendente sensaci&#243;n de hormigueo en la boca. Una experiencia sensorial que invita a descubrir el sabor de Brasil.</p>
+                        </div>
+                    </article>
+                    <article class="py-destacado">
+                        <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/galeria-fire.webp" alt="Licor Daga Fire en botella grande y miniatura" loading="lazy">
+                        <div class="py-destacado-texto">
+                            <h3>Fire <span>Licor de Canela</span></h3>
+                            <p>Intenso, arom&#225;tico y lleno de personalidad. Una propuesta para quienes disfrutan de sabores marcantes y experiencias vibrantes.</p>
+                        </div>
+                    </article>
+                    <article class="py-destacado">
+                        <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/galeria-capivara.webp" alt="Licor Daga Capivara en tres tama&#241;os" loading="lazy">
+                        <div class="py-destacado-texto">
+                            <h3>Capivara <span>Licor de Hierbas</span></h3>
+                            <p>Una combinaci&#243;n refrescante de yerba mate, cedr&#243;n y menta, inspirada en ingredientes y sabores que forman parte de nuestra identidad regional.</p>
+                        </div>
+                    </article>
+                    <article class="py-destacado">
+                        <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/galeria-bananina.webp" alt="Licor Daga Bananina" loading="lazy">
+                        <div class="py-destacado-texto">
+                            <h3>Bananina <span>Licor de Banana</span></h3>
+                            <p>Un homenaje a los sabores tropicales y a la tradici&#243;n gastron&#243;mica de Paran&#225;, con una personalidad dulce y aut&#233;ntica.</p>
+                        </div>
+                    </article>
+                    <article class="py-destacado">
+                        <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/galeria-licores.webp" alt="Licores Daga de diferentes sabores" loading="lazy">
+                        <div class="py-destacado-texto">
+                            <h3>Y muchos sabores m&#225;s...</h3>
+                            <p>Caf&#233;, frutas, miel, chocolate y combinaciones que reflejan la diversidad y creatividad de nuestro portafolio.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="py-linea-acao">
+                    <a href="#catalogo" class="py-btn py-btn-primary" data-ir-filtro="licor">Descubr&#237; nuestros licores</a>
+                </div>
+            </div>
+
+            <!-- Cachazas -->
+            <div class="py-linea py-linea-dupla" id="cachazas">
+                <div class="py-linea-fotos">
+                    <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/cachazas-paranaenses.webp" alt="Cachazas Daga del proyecto Cacha&#231;as Paranaenses en la barra" loading="lazy" class="py-linea-foto-grande">
+                    <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/tres-maderas.webp" alt="Cachazas Daga a&#241;ejadas en amburana, jequitib&#225; y laurel canela" loading="lazy">
+                    <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/cachaza-copa.webp" alt="Joven con una botella y una copa de cachaza Daga" loading="lazy">
+                </div>
+                <div class="py-linea-texto">
+                    <h3 class="py-linea-titulo">Cachazas Daga</h3>
+                    <p class="py-linea-lema">La tradici&#243;n brasile&#241;a con una nueva perspectiva.</p>
+                    <p>La cachaza es una de las expresiones m&#225;s aut&#233;nticas de la cultura brasile&#241;a.</p>
+                    <p>En Daga, valorizamos esta tradici&#243;n a trav&#233;s de una selecci&#243;n de cachazas con diferentes perfiles, incluyendo versiones tradicionales y opciones a&#241;ejadas en maderas especiales brasile&#241;as.</p>
+                    <p>Desde la intensidad de la cachaza cl&#225;sica hasta la complejidad de las versiones premium, nuestro portafolio ofrece alternativas para degustaci&#243;n, cocteler&#237;a y regalos.</p>
+                    <p class="py-linea-lista-titulo">Nuestra selecci&#243;n incluye:</p>
+                    <ul class="py-linea-lista">
+                        <li>Cachaza Cl&#225;sica</li>
+                        <li>Cachaza Amburana</li>
+                        <li>Cachaza Carvalho (Roble)</li>
+                        <li>Cachaza Jequitib&#225;</li>
+                        <li>Cachazas Premium y Ediciones Especiales, como blends y el proyecto Cacha&#231;as Paranaenses</li>
+                    </ul>
+                    <a href="#catalogo" class="py-btn py-btn-primary" data-ir-filtro="cachaca">Descubr&#237; nuestras cachazas</a>
+                </div>
+            </div>
+
+            <!-- Kits -->
+            <div class="py-linea py-linea-dupla py-linea-kits" id="kits">
+                <div class="py-linea-texto">
+                    <h3 class="py-linea-titulo">Kits y experiencias</h3>
+                    <p class="py-linea-lema">Mucho m&#225;s que una bebida: una forma de descubrir Brasil.</p>
+                    <p>Tambi&#233;n desarrollamos kits de degustaci&#243;n, miniaturas y presentaciones especiales que permiten explorar diferentes sabores y descubrir la diversidad de nuestras bebidas.</p>
+                    <p>Opciones pensadas para regalos, experiencias gastron&#243;micas, turismo y nuevos momentos de consumo.</p>
+                </div>
+                <div class="py-linea-fotos py-linea-fotos-uma">
+                    <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/kits-experiencias.webp" alt="Kit de degustaci&#243;n Daga con cinco miniaturas de licor en caja de MDF" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PORTAFOLIO (tarjetas armadas por script.js) ========== -->
+    <section class="py-vitrine py-vitrine-alt" id="catalogo">
+        <div class="py-container">
+            <div class="py-vitrine-topo">
+                <h2>Portafolio</h2>
+                <div class="py-filtros" role="tablist" aria-label="Filtrar productos">
+                    <button class="py-filtro py-ativo" data-filtro="todas" role="tab" aria-selected="true">Todos</button>
+                    <button class="py-filtro" data-filtro="licor" role="tab" aria-selected="false">Licores</button>
+                    <button class="py-filtro" data-filtro="cachaca" role="tab" aria-selected="false">Cachazas</button>
+                    <button class="py-filtro" data-filtro="kit" role="tab" aria-selected="false">Kits</button>
+                </div>
+            </div>
+            <div class="py-carrossel" data-carrossel>
+                <button class="py-carrossel-seta py-anterior" aria-label="Anteriores">&#8249;</button>
+                <div class="py-carrossel-trilho" data-lista="todas"></div>
+                <button class="py-carrossel-seta py-proxima" aria-label="Siguientes">&#8250;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== &#191;POR QU&#201; DAGA? ========== -->
+    <section class="py-razones" id="por-que">
+        <div class="py-container">
+            <div class="py-vitrine-topo py-centro">
+                <span class="py-eyebrow">&#191;Por qu&#233; Daga?</span>
+                <h2>Una marca brasile&#241;a con <em>identidad y visi&#243;n de futuro.</em></h2>
+            </div>
+            <div class="py-razones-grid">
+                <div class="py-razon">
+                    <span class="py-razon-numero">01</span>
+                    <h3>Autenticidad brasile&#241;a</h3>
+                    <p>Productos que valorizan nuestra cultura, nuestros ingredientes y nuestras tradiciones.</p>
+                </div>
+                <div class="py-razon">
+                    <span class="py-razon-numero">02</span>
+                    <h3>Innovaci&#243;n y diferenciaci&#243;n</h3>
+                    <p>Sabores originales y propuestas sensoriales que se destacan en el mercado.</p>
+                </div>
+                <div class="py-razon">
+                    <span class="py-razon-numero">03</span>
+                    <h3>Calidad y compromiso</h3>
+                    <p>Trabajamos con procesos de producci&#243;n realizados por establecimientos habilitados y bajo las exigencias regulatorias aplicables en Brasil.</p>
+                </div>
+                <div class="py-razon">
+                    <span class="py-razon-numero">04</span>
+                    <h3>Portafolio diversificado</h3>
+                    <p>Licores, cachazas, miniaturas y kits que se adaptan a diferentes canales y perfiles de consumidores.</p>
+                </div>
+                <div class="py-razon">
+                    <span class="py-razon-numero">05</span>
+                    <h3>Visi&#243;n internacional</h3>
+                    <p>Buscamos construir relaciones comerciales s&#243;lidas y ampliar la presencia de nuestras bebidas en nuevos mercados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== OPORTUNIDADES DE NEGOCIOS ========== -->
+    <section class="py-negocios" id="negocios">
+        <div class="py-container">
+            <div class="py-vitrine-topo py-centro">
+                <span class="py-eyebrow">Oportunidades de negocios</span>
+                <h2>Brasil y Paraguay: <em>nuevos mercados, grandes oportunidades.</em></h2>
+                <p>Creemos en el potencial de conectar la industria brasile&#241;a con empresarios y consumidores paraguayos.</p>
+                <p>Daga Bebidas busca establecer alianzas estrat&#233;gicas para desarrollar oportunidades comerciales y llevar sus productos al mercado internacional.</p>
+            </div>
+            <p class="py-negocios-abertos">Estamos abiertos a conversar sobre:</p>
+            <div class="py-negocios-grid">
+                <div class="py-negocio">
+                    <div class="py-negocio-foto"><img src="https://brunadumer.github.io/daga-paraguay/images/fotos/negocio-distribuidores.webp" alt="L&#237;nea de licores Daga sobre la barra" loading="lazy"></div>
+                    <span class="py-negocio-numero">01</span>
+                    <h3>Importaci&#243;n y distribuci&#243;n</h3>
+                    <p>Alianzas con importadores y distribuidores interesados en incorporar bebidas brasile&#241;as diferenciadas a sus portafolios.</p>
+                </div>
+                <div class="py-negocio">
+                    <div class="py-negocio-foto"><img src="https://brunadumer.github.io/daga-paraguay/images/fotos/negocio-bares.webp" alt="Tabla de degustaci&#243;n con cuatro licores Daga" loading="lazy"></div>
+                    <span class="py-negocio-numero">02</span>
+                    <h3>Comercio minorista y gastronom&#237;a</h3>
+                    <p>Oportunidades para supermercados, tiendas especializadas, bares, restaurantes y otros canales de comercializaci&#243;n.</p>
+                </div>
+                <div class="py-negocio">
+                    <div class="py-negocio-foto py-negocio-foto-kit"><img src="https://brunadumer.github.io/daga-paraguay/images/fotos/kit-regalo.webp" alt="Caja Daga con cinco botellas" loading="lazy"></div>
+                    <span class="py-negocio-numero">03</span>
+                    <h3>Private Label &#8212; Marcas propias</h3>
+                    <p>Desarrollo de proyectos personalizados para empresas que buscan crear bebidas con identidad comercial propia, mediante acuerdos espec&#237;ficos de producci&#243;n y suministro.</p>
+                </div>
+                <div class="py-negocio">
+                    <div class="py-negocio-foto"><img src="https://brunadumer.github.io/daga-paraguay/images/fotos/galeria-brindis.webp" alt="Brindis con cachaza Daga" loading="lazy"></div>
+                    <span class="py-negocio-numero">04</span>
+                    <h3>Alianzas comerciales</h3>
+                    <p>Colaboraciones para desarrollar nuevos mercados, explorar oportunidades y construir relaciones de largo plazo.</p>
+                </div>
+            </div>
+            <div class="py-negocios-cierre">
+                <h3>&#191;Hacemos negocios juntos?</h3>
+                <p>Conoc&#233; nuestro portafolio y conversemos sobre c&#243;mo podemos crear nuevas oportunidades para tu empresa.</p>
+                <div class="py-negocios-acoes">
+                    <a href="https://wa.me/5541992003693" class="py-btn py-btn-primary" target="_blank" rel="noopener" data-msg="socio">Quiero ser socio comercial</a>
+                    <a href="#contacto" class="py-btn py-btn-ghost">Solicitar contacto comercial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONECTEMOS ========== -->
+    <section class="py-conectemos" id="contacto">
+        <div class="py-container py-conectemos-grid">
+            <div class="py-conectemos-foto">
+                <img src="https://brunadumer.github.io/daga-paraguay/images/fotos/conectemos.webp" alt="Cachaza Daga Cl&#225;sica con un c&#243;ctel en la barra" loading="lazy">
+            </div>
+            <div class="py-conectemos-info">
+                <span class="py-eyebrow">Conectemos</span>
+                <h2>El pr&#243;ximo gran brindis puede comenzar con <em>una buena alianza.</em></h2>
+                <p>Desde Brasil, estamos preparados para compartir nuestra pasi&#243;n por las bebidas aut&#233;nticas y explorar nuevas oportunidades en Paraguay.</p>
+                <p>Si sos importador, distribuidor, empresario o represent&#225;s una marca interesada en desarrollar nuevos productos, queremos conocerte.</p>
+                <p>Complet&#225; el formulario y nuestro equipo comercial se pondr&#225; en contacto.</p>
+
+                <!-- Al enviar, el formulario abre WhatsApp con los datos completados (ver script.js, secci&#243;n 9) -->
+                <form class="py-formulario" id="formContacto" novalidate>
+                    <div class="py-campo">
+                        <label for="fNombre">Nombre y apellido</label>
+                        <input type="text" id="fNombre" name="nombre" autocomplete="name" required>
+                    </div>
+                    <div class="py-campo">
+                        <label for="fEmpresa">Empresa</label>
+                        <input type="text" id="fEmpresa" name="empresa" autocomplete="organization">
+                    </div>
+                    <div class="py-campo">
+                        <label for="fCiudad">Pa&#237;s / Ciudad</label>
+                        <input type="text" id="fCiudad" name="ciudad">
+                    </div>
+                    <div class="py-campo">
+                        <label for="fEmail">Correo electr&#243;nico</label>
+                        <input type="email" id="fEmail" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="py-campo">
+                        <label for="fWhatsapp">WhatsApp</label>
+                        <input type="tel" id="fWhatsapp" name="whatsapp" autocomplete="tel">
+                    </div>
+                    <div class="py-campo">
+                        <label for="fInteres">&#193;rea de inter&#233;s</label>
+                        <select id="fInteres" name="interes">
+                            <option>Importaci&#243;n y distribuci&#243;n</option>
+                            <option>Comercio minorista</option>
+                            <option>Gastronom&#237;a</option>
+                            <option>Private Label</option>
+                            <option>Otras alianzas</option>
+                        </select>
+                    </div>
+                    <div class="py-campo py-campo-largo">
+                        <label for="fMensaje">Mensaje</label>
+                        <textarea id="fMensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+                    <p class="py-form-erro" id="formErro" hidden>Complet&#225; tu nombre y un correo electr&#243;nico v&#225;lido.</p>
+                    <button type="submit" class="py-btn py-btn-primary py-campo-largo">Enviar consulta</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+/* DAGA BEBIDAS - PAGINA PARAGUAY NA WBUY (script)
+   A lista de produtos vem do script.js do site (o gerar-wbuy.py copia). */
+(function() {
+    'use strict';
+
+    const IMG = 'https://assets.sistemawbuy.com.br/arquivos/829e6bff907fc6de7a54a7629c9eeafe/produtos/';
+    const WHATSAPP = '5541992003693';
+
+    const produtos = [
+    { nome: 'Jambeijo - Licor del Beso 500 ml', tipo: 'Licor fino con jamb\u00fa \u00b7 22% vol', categoria: 'licor', selo: 'Producto estrella', foto: '68dff2cdbae5f/jambeijo-500-site-sem-fundo-6ad65d2819f9d_mini.jpeg', listas: ['maisvendidos'] },
+    { nome: 'Cachaza Jequitib\u00e1 750 ml', tipo: 'A\u00f1ejada en jequitib\u00e1 \u00b7 40% vol', categoria: 'cachaca', selo: 'Premiada', foto: '68feb06fc4356/14-2-68febe8052cea_mini.jpg', listas: ['premium'] },
+    { nome: 'Cachaza Single Barrel Roble Americano 750 ml', tipo: 'Barril \u00fanico \u00b7 40% vol', categoria: 'cachaca', selo: 'Premium', foto: '690f56d878019/single-barrel-site-69176ee9752cc_mini.jpg', listas: ['premium'] },
+    { nome: 'Licor de Leche Condensada 500 ml', tipo: 'L\u00ednea Castro-PR \u00b7 20% vol', categoria: 'licor', foto: '68fd50a02eabe/sem-nome-1600-x-1200-px-1600-x-1200-px-5-68fd6f0438fd9_mini.jpg', listas: ['maisvendidos'] },
+    { nome: 'Cachaza Blend Reserva Porto 750 ml', tipo: 'Blend reserva \u00b7 40% vol', categoria: 'cachaca', selo: 'Reserva', foto: '690f56d219a4a/18-69177a706367a_mini.jpg', listas: ['premium'] },
+    { nome: 'Licor Fire 750 ml', tipo: 'Licor fino de canela \u00b7 27,2% vol', categoria: 'licor', selo: 'Novedad', foto: '68dd68ef79e3c/20260313_094433-1-jpg-69bdc538f370a_mini.jpg', listas: ['maisvendidos'] },
+    { nome: 'Cachaza Laurel Canela 750 ml', tipo: 'A\u00f1ejada en laurel canela \u00b7 40% vol', categoria: 'cachaca', foto: '690f56d654517/louro-canela-6917721d75844_mini.jpg', listas: ['premium'] },
+    { nome: 'Kit MDF con 5 cachazas de 60 ml', tipo: 'Maderas brasile\u00f1as', categoria: 'kit', selo: 'Regalo', foto: '68fd7a19efd13/12-2-photoroom-jegj33wn8i-68fff3267ba6a_mini.jpg', listas: ['maisvendidos'] },
+    { nome: 'Licor de Jabuticaba 750 ml', tipo: 'Fruta t\u00edpica brasile\u00f1a \u00b7 16% vol', categoria: 'licor', foto: '68dd68f242490/sem-nome-1600-x-1200-px-1600-x-1200-px-18-68fdad8b1ae50_mini.jpg', listas: ['maisvendidos'] },
+    { nome: 'Cachaza Amburana 750 ml', tipo: 'A\u00f1ejada en amburana \u00b7 40% vol', categoria: 'cachaca', foto: '68dd494753ba4/sem-ti-tulo-14-68feaebfb34c4_mini.jpg', listas: ['premium'] },
+    { nome: 'Cachaza Roble 750 ml', tipo: 'A\u00f1ejada en roble \u00b7 40% vol', categoria: 'cachaca', foto: '690f56e16dd2b/carvalho-site-69176d48c0ec3_mini.jpg', listas: ['premium'] },
+    { nome: 'Cachaza Cl\u00e1sica 750 ml', tipo: 'Ideal para caipiri\u00f1a y cocteler\u00eda \u00b7 40% vol', categoria: 'cachaca', selo: 'Cocteler\u00eda', foto: '690f56ebf2946/cla-ssica-6966a0e7764fe_mini.jpg', listas: [] },
+    { nome: 'Licor de Lim\u00f3n y Miel 750 ml', tipo: 'Licor fino \u00b7 16% vol', categoria: 'licor', foto: '68dd68d9e25ba/08-photoroom-fjgfr7zo56-68fea700599c5_mini.jpg', listas: [] },
+    { nome: 'Licor de Mburucuy\u00e1 750 ml', tipo: 'Maracuy\u00e1 \u00b7 licor fino \u00b7 16% vol', categoria: 'licor', foto: '68dd68d762344/maracuja-750-68fea8a7b5bee_mini.jpg', listas: [] },
+    { nome: 'Licor de Banana 750 ml', tipo: 'Licor fino \u00b7 25,2% vol', categoria: 'licor', foto: '68dd68ca7a22d/banana-68fea9693e181_mini.jpg', listas: [] },
+    { nome: 'Kit MDF con 5 licores de 60 ml', tipo: 'Sabores surtidos', categoria: 'kit', selo: 'Regalo', foto: '690f542cd5605/prancheta-690f7408463fc_mini.jpg', listas: [] },
+    { nome: 'Kit MDF con 5 licores de 160 ml', tipo: 'Sabores surtidos', categoria: 'kit', foto: '68f58d5db2615/kit-site-6920942d5bb25_mini.jpg', listas: [] },
+    { nome: 'Maleta degustaci\u00f3n kraft con 5 licores de 60 ml', tipo: 'Sabores surtidos', categoria: 'kit', foto: '68fd79a2b8ce2/39fa5699fbef97ccc34e61af5e01b9ce-q80spkqw2a-68fec0cb74219_mini.jpg', listas: [] },
+    { nome: 'Cachaza Jequitib\u00e1 375 ml', tipo: 'A\u00f1ejada en jequitib\u00e1 \u00b7 40% vol', categoria: 'cachaca', selo: 'Premiada', foto: '68feb06dccae4/17-68febf4c16b01_mini.jpg', listas: [] },
+    { nome: 'Cachaza Roble 375 ml', tipo: 'A\u00f1ejada en roble \u00b7 40% vol', categoria: 'cachaca', foto: '690f56da7b78a/carvalho-375-69176e140503c_mini.jpg', listas: [] },
+    { nome: 'Cachaza Laurel Canela 160 ml', tipo: 'A\u00f1ejada en laurel canela \u00b7 40% vol', categoria: 'cachaca', foto: '68f58ce724009/louro-canela-68f8f5ea25b80_mini.jpg', listas: [] }
+];
+
+    const mensagens = {
+        comercial: '\u00a1Hola! Vi el sitio de Daga Bebidas y me gustar\u00eda recibir informaci\u00f3n comercial para Paraguay.',
+        socio: '\u00a1Hola! Me interesa ser socio comercial de Daga Bebidas en Paraguay. \u00bfPodemos conversar?',
+        produto: '\u00a1Hola! Me gustar\u00eda recibir informaci\u00f3n comercial sobre: '
+    };
+
+    function linkWhatsapp(texto) {
+        return 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(texto);
+    }
+
+    function iniciar() {
+        const pagina = document.getElementById('daga-py');
+        if (!pagina || pagina.dataset.pronto) return;
+        pagina.dataset.pronto = 'sim';
+
+        // 1. Largura total da tela (a loja coloca o conte\u00fado numa coluna)
+        function esticar() {
+            pagina.style.marginLeft = '0px';
+            pagina.style.width = document.documentElement.clientWidth + 'px';
+            pagina.style.marginLeft = (-pagina.getBoundingClientRect().left) + 'px';
+        }
+        esticar();
+        window.addEventListener('resize', esticar);
+
+        // 2. Cards do portafolio
+        const trilho = pagina.querySelector('[data-lista="todas"]');
+        produtos.forEach(produto => {
+            const card = document.createElement('a');
+            card.className = 'py-produto-card';
+            card.href = linkWhatsapp(mensagens.produto + produto.nome);
+            card.target = '_blank';
+            card.rel = 'noopener';
+            card.dataset.categoria = produto.categoria;
+            card.innerHTML =
+                '<div class="py-produto-imagem">' +
+                (produto.selo ? '<span class="py-produto-tag">' + produto.selo + '</span>' : '') +
+                '<img src="' + IMG + produto.foto + '" alt="' + produto.nome + '" loading="lazy"></div>' +
+                '<h3>' + produto.nome + '</h3>' +
+                '<p class="py-produto-tipo">' + produto.tipo + '</p>' +
+                '<span class="py-produto-consultar">Consultar</span>';
+            trilho.appendChild(card);
+        });
+
+        // 3. Setas do carrossel
+        const carrossel = pagina.querySelector('[data-carrossel]');
+        const anterior = carrossel.querySelector('.py-anterior');
+        const proxima = carrossel.querySelector('.py-proxima');
+
+        function atualizarSetas() {
+            const fim = trilho.scrollWidth - trilho.clientWidth - 4;
+            anterior.disabled = trilho.scrollLeft <= 4;
+            proxima.disabled = trilho.scrollLeft >= fim;
+        }
+
+        function passo() {
+            const card = trilho.querySelector('.py-produto-card:not([hidden])');
+            if (!card) return trilho.clientWidth;
+            const largura = card.getBoundingClientRect().width + parseFloat(getComputedStyle(trilho).columnGap);
+            return Math.max(1, Math.floor((trilho.clientWidth + 1) / largura)) * largura;
+        }
+
+        anterior.addEventListener('click', () => trilho.scrollBy({ left: -passo(), behavior: 'smooth' }));
+        proxima.addEventListener('click', () => trilho.scrollBy({ left: passo(), behavior: 'smooth' }));
+        trilho.addEventListener('scroll', atualizarSetas, { passive: true });
+        window.addEventListener('resize', atualizarSetas);
+        atualizarSetas();
+
+        // 4. Filtro de categorias
+        const botoesFiltro = pagina.querySelectorAll('.py-filtro');
+        botoesFiltro.forEach(botao => {
+            botao.addEventListener('click', () => {
+                botoesFiltro.forEach(b => {
+                    b.classList.toggle('py-ativo', b === botao);
+                    b.setAttribute('aria-selected', b === botao);
+                });
+                const filtro = botao.dataset.filtro;
+                trilho.querySelectorAll('.py-produto-card').forEach(card => {
+                    card.hidden = filtro !== 'todas' && card.dataset.categoria !== filtro;
+                });
+                trilho.scrollLeft = 0;
+                atualizarSetas();
+            });
+        });
+
+        // 5. Bot\u00f5es "Descubr\u00ed..." levam ao portafolio j\u00e1 filtrado
+        pagina.querySelectorAll('[data-ir-filtro]').forEach(link => {
+            link.addEventListener('click', () => {
+                const botao = pagina.querySelector('.py-filtro[data-filtro="' + link.dataset.irFiltro + '"]');
+                if (botao) botao.click();
+            });
+        });
+
+        // 6. Rolagem suave nos links internos (desconta o topo fixo da loja)
+        pagina.querySelectorAll('a[href^="#"]').forEach(link => {
+            link.addEventListener('click', e => {
+                const alvo = document.getElementById(link.getAttribute('href').slice(1));
+                if (!alvo) return;
+                e.preventDefault();
+                window.scrollTo({ top: alvo.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
+            });
+        });
+
+        // 7. Links do WhatsApp com mensagem em espanhol
+        pagina.querySelectorAll('a[href*="wa.me"]').forEach(link => {
+            if (link.getAttribute('href').includes('text=')) return;
+            link.href = linkWhatsapp(mensagens[link.dataset.msg] || mensagens.comercial);
+        });
+
+        // 8. Formul\u00e1rio: abre o WhatsApp com os dados preenchidos
+        const form = pagina.querySelector('#formContacto');
+        const erro = pagina.querySelector('#formErro');
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const d = Object.fromEntries(new FormData(form));
+            const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(d.email.trim());
+            if (!d.nombre.trim() || !emailValido) {
+                erro.hidden = false;
+                return;
+            }
+            erro.hidden = true;
+            const linhas = [
+                '\u00a1Hola! Quiero hacer una consulta comercial.',
+                '',
+                'Nombre: ' + d.nombre.trim(),
+                d.empresa.trim() ? 'Empresa: ' + d.empresa.trim() : null,
+                d.ciudad.trim() ? 'Pa\u00eds / Ciudad: ' + d.ciudad.trim() : null,
+                'Correo: ' + d.email.trim(),
+                d.whatsapp.trim() ? 'WhatsApp: ' + d.whatsapp.trim() : null,
+                '\u00c1rea de inter\u00e9s: ' + d.interes,
+                d.mensaje.trim() ? 'Mensaje: ' + d.mensaje.trim() : null
+            ].filter(l => l !== null);
+            window.open(linkWhatsapp(linhas.join('\n')), '_blank', 'noopener');
+        });
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', iniciar);
+    } else {
+        iniciar();
+    }
+})();
+
+</script>
