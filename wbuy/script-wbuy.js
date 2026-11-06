@@ -104,12 +104,18 @@
             });
         });
 
-        // 6. Rolagem suave nos links internos (desconta o topo fixo da loja)
+        // 6. Links internos (#esencia, #contacto...): a loja usa <base href> na raiz e o
+        //    Google Analytics reescreve os links no clique, entao o destino fica guardado
+        //    em data-alvo e o link aponta para esta mesma pagina.
         pagina.querySelectorAll('a[href^="#"]').forEach(link => {
+            const id = link.getAttribute('href').slice(1);
+            link.dataset.alvo = id;
+            link.setAttribute('href', location.pathname + '#' + id);
             link.addEventListener('click', e => {
-                const alvo = document.getElementById(link.getAttribute('href').slice(1));
+                const alvo = document.getElementById(link.dataset.alvo);
                 if (!alvo) return;
                 e.preventDefault();
+                e.stopPropagation();
                 window.scrollTo({ top: alvo.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' });
             });
         });
